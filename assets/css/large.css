@@ -1,0 +1,32 @@
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  /* @media screen and (min-width: 768px) { */
+
+  /* Global */
+
+  html {
+    font-size: 2vw;
+  }
+
+  .hide-large {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  /* Background */
+
+  .bg-svg {
+    width: auto;
+    height: 65vh;
+  }
+
+  /* Footer */
+
+  footer .flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

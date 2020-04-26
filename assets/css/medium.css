@@ -1,0 +1,50 @@
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  /* Global */
+
+  html {
+    font-size: 3vw;
+  }
+
+  .hide-medium {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  /* Background */
+
+  .bg-svg {
+    width: auto;
+    height: 60vh;
+  }
+
+  /* Header */
+
+  header {
+    height: 25vw;
+  }
+
+  header.header-homepage h3.header-title {
+    left: 0;
+  }
+
+  header.header-homepage h2.header-title {
+    left: 0;
+  }
+
+  /* Footer */
+
+  footer .flex {
+    flex-direction: column;
+  }
+
+  footer .flex a {
+    margin-left: 0;
+  }
+
+  footer .flex h6:first-of-type {
+    order: 3;
+  }
+}

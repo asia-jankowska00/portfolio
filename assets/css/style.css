@@ -23,6 +23,13 @@
   );
   --font-primary: Montserrat, "Segoe UI", sans-serif;
   --font-secondary: Nunito, "Segoe UI", sans-serif;
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 2rem;
+  --font-3xl: 3rem;
 }
 
 /* Utilities */
@@ -35,6 +42,38 @@
   font-family: var(--font-secondary);
 }
 
+.text-dark {
+  color: var(--grey-6);
+}
+
+.text-light {
+  color: var(--grey-1);
+}
+
+.text-thin {
+  font-weight: 400;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-black {
+  font-weight: 900;
+}
+
+.flex {
+  display: flex;
+}
+
+.display-none {
+  display: none;
+}
+
+.main-margin {
+  padding: 0 4vw;
+}
+
 /* Global */
 
 * {
@@ -42,57 +81,204 @@
 }
 
 html {
-  font-size: 16px;
-  /* overflow-x: hidden; */
+  font-family: var(--font-primary);
 }
 
 body {
   padding: 0;
   margin: 0;
   background-color: var(--grey-2);
-}
-
-.svg-background {
-  /* object-fit: fill; */
-  display: block;
-  background-image: url(/assets/images/svg/polygon-bg-sharp.svg);
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  /* background-origin: content-box; */
-}
-
-.background-container {
-  /* padding: 50vh 0; */
-  margin-top: 45vh;
-  /* min-width: 100vw; */
-  /* width: 100%; */
-  /* max-height: 55vh; */
-  /* height: 10vh; */
   overflow-x: hidden;
 }
 
-.background-wrapper {
+h1 {
+  font-size: var(--font-3xl);
+  margin: 1rem 0;
+}
+h2 {
+  font-size: var(--font-2xl);
+  margin: 1rem 0;
+}
+h3 {
+  font-size: var(--font-xl);
+  margin: 0.8rem 0;
+}
+h4 {
+  font-size: var(--font-lg);
+  margin: 0.6rem 0;
+}
+h5 {
+  font-size: var(--font-md);
+  margin: 0.5rem 0;
+}
+h6 {
+  font-size: var(--font-sm);
+  margin: 0.4rem 0;
+}
+
+p {
+  font-size: var(--font-xs);
+  font-family: var(--font-secondary);
+  margin: 0.4rem 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Background */
+
+.bg-wrapper {
   width: 100vw;
   position: absolute;
   left: 0;
   top: 0;
   overflow-x: hidden;
+  pointer-events: none;
+  z-index: -9999;
 }
 
-img {
-  /* position: absolute; */
-  /* left: 0; */
+.bg-svg {
   margin-top: 45vh;
   width: 100vw;
-  /* height: 10vh; */
-  /* height: 55vh; */
-  /* object-fit: cover; */
 }
 
-@media (max-width: 768px) {
-  img {
-    width: auto;
-    height: 60vh;
+/* Gradient */
+
+.gradient-background {
+  background-image: var(--gradient);
+  background-size: 800% 800%;
+  animation-name: gradientBG;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 100%;
   }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header */
+
+header {
+  height: 15vw;
+  position: relative;
+}
+
+header div {
+  height: 100%;
+}
+
+.header-svg {
+  position: absolute;
+  bottom: 0;
+}
+
+header .header-title {
+  position: absolute;
+  margin: 0;
+  padding: 4vw;
+}
+
+header.header-homepage {
+  height: 100vh;
+}
+
+header.header-homepage h3.header-title {
+  top: 30%;
+  left: 50%;
+}
+
+header.header-homepage h2.header-title {
+  top: 40%;
+  left: 50%;
+}
+
+/* Navigation */
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 1.6vw 2.6vw;
+}
+
+nav.nav-desktop ul {
+  justify-content: flex-end;
+}
+
+nav.nav-mobile {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+
+nav.nav-mobile ul {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+nav.nav-mobile ul li {
+  padding: 4vw 10vw;
+}
+
+nav.nav-mobile i {
+  position: absolute;
+  right: 0;
+  /* float: right; */
+  padding: 4vw;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--grey-6);
+  text-align: center;
+}
+
+footer .flex {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .flex a {
+  margin-left: 7vw;
+}
+
+footer h5 {
+  margin: 2rem 0;
+}
+
+.footer-wrapper {
+  padding: 2vw 10vw;
+}
+
+.footer-gradient {
+  width: 100%;
+  height: 25px;
 }

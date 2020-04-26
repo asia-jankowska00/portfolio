@@ -1,0 +1,22 @@
+@media screen and (min-width: 1201px) {
+  /* Global */
+
+  html {
+    font-size: 1.6vw;
+  }
+
+  .hide-extra-large {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  /* Background */
+
+  .bg-svg {
+    margin-top: 45vh;
+    width: 100vw;
+  }
+}
