@@ -27,11 +27,13 @@
   }
 
   header.header-homepage h3.header-title {
-    left: 0;
+    top: 30%;
+    left: 10%;
   }
 
-  header.header-homepage h2.header-title {
-    left: 0;
+  header.header-homepage h1.header-title {
+    top: 40%;
+    left: 10%;
   }
 
   /* Footer */

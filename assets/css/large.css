@@ -19,7 +19,17 @@
 
   .bg-svg {
     width: auto;
-    height: 65vh;
+    height: 50vh;
+  }
+
+  /* Header */
+
+  header.header-homepage h3.header-title {
+    left: 45%;
+  }
+
+  header.header-homepage h1.header-title {
+    left: 45%;
   }
 
   /* Footer */

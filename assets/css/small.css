@@ -17,7 +17,7 @@
 
   .bg-svg {
     width: auto;
-    height: 55vh;
+    height: 65vh;
   }
 
   /* Header */
@@ -27,11 +27,13 @@
   }
 
   header.header-homepage h3.header-title {
-    left: 0;
+    top: 30%;
+    left: 10%;
   }
 
-  header.header-homepage h2.header-title {
-    left: 0;
+  header.header-homepage h1.header-title {
+    top: 40%;
+    left: 10%;
   }
 
   /* Footer */
@@ -46,5 +48,12 @@
 
   footer .flex h6:first-of-type {
     order: 3;
+  }
+
+  /* Blurb */
+
+  .blurb-links {
+    flex-direction: column;
+    /* justify-content: space-between; */
   }
 }

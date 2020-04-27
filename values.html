@@ -16,7 +16,7 @@
     ></script>
   </head>
   <body>
-    <header class="header-homepage">
+    <header>
       <div class="gradient-background text-light">
         <img
           class="header-svg"
@@ -24,31 +24,10 @@
           alt=""
         />
 
+        <h2 class="header-title">&lt;Title /&gt;</h2>
+
         <nav class="nav-desktop">
           <ul>
-            <li class="white-underline-hover"><a href="index.html">home</a></li>
-            <li class="white-underline-hover">
-              <a href="skills.html">skills</a>
-            </li>
-            <li class="white-underline-hover">
-              <a href="values.html">values</a>
-            </li>
-            <li class="white-underline-hover">
-              <a href="story.html">story</a>
-            </li>
-            <li class="white-underline-hover">
-              <a href="cases.html">cases</a>
-            </li>
-          </ul>
-        </nav>
-
-        <!-- <i class="fas fa-bars"></i> -->
-
-        <nav class="nav-mobile">
-          <h2 class="margin-0">
-            <i class="fas fa-bars" id="menuHamburger"></i>
-          </h2>
-          <ul class="gradient-background display-none" id="menuUl">
             <li><a href="index.html">home</a></li>
             <li><a href="skills.html">skills</a></li>
             <li><a href="values.html">values</a></li>
@@ -57,11 +36,16 @@
           </ul>
         </nav>
 
-        <h3 class="header-title">&lt;hello world /&gt;</h3>
-        <h1 class="header-title">
-          I'm Joanna - <br />
-          a front end developer.
-        </h1>
+        <nav class="nav-mobile">
+          <i class="fas fa-bars" id="menuHamburger"></i>
+          <ul class="gradient-background display-none" id="menuUl">
+            <li><a href="index.html">home</a></li>
+            <li><a href="skills.html">skills</a></li>
+            <li><a href="values.html">values</a></li>
+            <li><a href="story.html">story</a></li>
+            <li><a href="cases.html">cases</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -83,18 +67,15 @@
             users and satisfy stakeholder’s expectations.
           </p>
           <div class="flex blurb-links">
-            <a href="skills.html"
-              ><h4 class="gradient-underline-hover padding-y-extra-small">
-                my skills <i class="fas fa-long-arrow-alt-right"></i></h4
-            ></a>
-            <a href="values.html"
-              ><h4 class="gradient-underline-hover padding-y-extra-small">
-                my values <i class="fas fa-long-arrow-alt-right"></i></h4
-            ></a>
-            <a href="story.html"
-              ><h4 class="gradient-underline-hover padding-y-extra-small">
-                my story <i class="fas fa-long-arrow-alt-right"></i></h4
-            ></a>
+            <h4 class="gradient-underline-hover">
+              my skills <i class="fas fa-long-arrow-alt-right"></i>
+            </h4>
+            <h4 class="gradient-underline-hover">
+              my values <i class="fas fa-long-arrow-alt-right"></i>
+            </h4>
+            <h4 class="gradient-underline-hover">
+              my story <i class="fas fa-long-arrow-alt-right"></i>
+            </h4>
           </div>
         </div>
       </div>
@@ -123,9 +104,7 @@
             <i class="fab fa-linkedin"></i>
           </h2>
           <h6 class="text-thin">
-            <a href="#" class="white-underline-hover padding-y-extra-small"
-              >Back to top <i class="fas fa-arrow-up"></i
-            ></a>
+            <a href="#">Back to top <i class="fas fa-arrow-up"></i></a>
           </h6>
           <h6 class="text-thin">&copy; Joanna Jankowska</h6>
         </div>
