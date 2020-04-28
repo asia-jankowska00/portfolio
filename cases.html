@@ -17,79 +17,137 @@
   </head>
   <body>
     <header>
-      <div class="gradient-background text-light">
+      <div class="text-light gradient-half-background">
+        <div class="hero-image"></div>
         <img
           class="header-svg"
           src="/assets/images/svg/polygon-header.svg"
           alt=""
         />
 
-        <h2 class="header-title">&lt;Title /&gt;</h2>
+        <h2 class="header-title padding-x-large padding-y-small">
+          &lt;Cases /&gt;
+        </h2>
 
         <nav class="nav-desktop">
           <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="skills.html">skills</a></li>
-            <li><a href="values.html">values</a></li>
-            <li><a href="story.html">story</a></li>
-            <li><a href="cases.html">cases</a></li>
+            <li class="white-underline-hover"><a href="index.html">home</a></li>
+            <li class="white-underline-hover">
+              <a href="skills.html">skills</a>
+            </li>
+            <li class="white-underline-hover">
+              <a href="values.html">values</a>
+            </li>
+            <li class="white-underline-hover">
+              <a href="story.html">story</a>
+            </li>
+            <li class="white-underline-hover">
+              <a href="cases.html">cases</a>
+            </li>
           </ul>
         </nav>
 
         <nav class="nav-mobile">
-          <i class="fas fa-bars" id="menuHamburger"></i>
-          <ul class="gradient-background display-none" id="menuUl">
+          <h2 class="margin-0">
+            <i class="fas fa-bars" id="menuHamburger"></i>
+          </h2>
+          <ul class="gradient-half-background display-none" id="menuUl">
             <li><a href="index.html">home</a></li>
             <li><a href="skills.html">skills</a></li>
             <li><a href="values.html">values</a></li>
             <li><a href="story.html">story</a></li>
             <li><a href="cases.html">cases</a></li>
+            <li class="hero-image"></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section class="padding-x-medium padding-y-medium blurb">
-      <h1 class="text-center">&lt;Front end developer /&gt;</h1>
+    <section class="padding-x-large padding-y-small skills">
       <div class="flex">
-        <img
-          class="blurb-image hide-small"
-          src="assets/images/svg/icon-webdev3.svg"
-          alt=""
-        />
-        <div class="flex blurb-content">
-          <h4 class="subtitle">
-            "A person who creates user interfaces and websites."
-          </h4>
-          <p class="width-75">
-            That's me! But I do more than just build websites and interfaces – I
-            create elegant, thoughtful digital experiences, that delight the
-            users and satisfy stakeholder’s expectations.
+        <div class="skills-icons width-35">
+          <h1>HTML, CSS, JavaScript</h1>
+        </div>
+        <div class="width-60 skills-text">
+          <p>
+            I speak fluent HTML and CSS, after having written thousands of lines
+            of both. This allows me to create solutions that are responsive,
+            cross-browser and meet accessibility standards.
           </p>
-          <div class="flex blurb-links">
-            <h4 class="gradient-underline-hover">
-              my skills <i class="fas fa-long-arrow-alt-right"></i>
-            </h4>
-            <h4 class="gradient-underline-hover">
-              my values <i class="fas fa-long-arrow-alt-right"></i>
-            </h4>
-            <h4 class="gradient-underline-hover">
-              my story <i class="fas fa-long-arrow-alt-right"></i>
-            </h4>
-          </div>
+          <p>
+            I know the ins and outs of JavaScript, including its most modern
+            syntax. It is the programming language I specialize in, being able
+            to write both functional and object-oriented code. I understand the
+            language on a deep level, which allows me to adapt quickly to
+            existing codebases.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="padding-x-medium padding-y-large cases">
-      <h1 class="text-center">&lt;Cases /&gt;</h1>
-      <h4 class="subtitle">
-        projects I've worked on
-      </h4>
-      <div class="flex cases-showcase">
-        <div class="case"></div>
-        <div class="case"></div>
-        <div class="case"></div>
+    <section class="padding-x-large padding-y-small skills">
+      <div class="flex">
+        <div class="skills-icons width-35">
+          <h1>React, Bootstrap, Tailwind</h1>
+        </div>
+        <div class="width-60 skills-text">
+          <p>
+            I have worked with front end frameworks, most notably React,
+            allowing me to easily and quickly create complex, robust and
+            scalable interfaces.
+          </p>
+          <p>
+            I can use UI frameworks such as Bootstrap and Tailwind to complete
+            projects faster, and use design systems that would ensure a
+            consistent look of the interface, while keeping everything
+            responsive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="padding-x-large padding-y-small skills">
+      <div class="flex">
+        <div class="skills-icons width-35">
+          <h1>Git, Scrum, Agile</h1>
+        </div>
+        <div class="width-60 skills-text">
+          <p>
+            I have experience using Git and GitHub for version control and
+            collaboration, which allows me to fit right into a developer team
+            and start collaborating.
+          </p>
+          <p>
+            I know how to work in agile methodologies, such as Scrum. I know how
+            to utilize digital tools like Kanban boards and communicators such
+            as Microsoft Teams to my greatest benefit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="padding-x-large padding-y-small skills">
+      <div class="flex">
+        <div class="skills-icons width-35">
+          <h1>
+            Design,<br />
+            UI, UX
+          </h1>
+        </div>
+        <div class="width-60 skills-text">
+          <p>
+            I know the principles of visual design, and their application in
+            interfaces.
+          </p>
+          <p>
+            I’m no stranger to user experience design methods and I can assure
+            that my solutions are first of all user-friendly.
+          </p>
+          <p>
+            I know how to quickly evaluate, approve or improve a design with
+            usability heuristics.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -104,16 +162,22 @@
             <i class="fab fa-linkedin"></i>
           </h2>
           <h6 class="text-thin">
-            <a href="#">Back to top <i class="fas fa-arrow-up"></i></a>
+            <a href="#" class="white-underline-hover padding-y-extra-small"
+              >Back to top <i class="fas fa-arrow-up"></i
+            ></a>
           </h6>
           <h6 class="text-thin">&copy; Joanna Jankowska</h6>
         </div>
       </div>
-      <div class="footer-gradient gradient-background"></div>
+      <div class="footer-gradient gradient-half-background"></div>
     </footer>
 
-    <div class="bg-wrapper full-vh-margin">
-      <img class="bg-svg" src="/assets/images/svg/polygon-bg-flat.svg" alt="" />
+    <div class="bg-wrapper">
+      <img
+        class="bg-svg margin-first"
+        src="/assets/images/svg/polygon-bg-flat.svg"
+        alt=""
+      />
       <img
         class="bg-svg hide-medium hide-small"
         src="/assets/images/svg/polygon-bg-flat.svg"

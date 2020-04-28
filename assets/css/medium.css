@@ -20,6 +20,12 @@
     height: 60vh;
   }
 
+  .hero-image {
+    background-image: url(/assets/images/hero-image.jpg);
+    background-size: cover;
+    background-position: center bottom;
+  }
+
   /* Header */
 
   header {
@@ -48,5 +54,46 @@
 
   footer .flex h6:first-of-type {
     order: 3;
+  }
+
+  /* Blurb */
+
+  .blurb-links {
+    flex-direction: column;
+  }
+
+  /* Skills */
+
+  section.skills > .flex {
+    flex-direction: column;
+  }
+
+  .skills-icons {
+    width: 70%;
+  }
+
+  .skills-text {
+    width: 100%;
+  }
+
+  /* Story */
+
+  section.story {
+    flex-direction: column;
+  }
+
+  .story-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4vw;
+  }
+
+  .story-image img {
+    width: 50%;
+  }
+
+  .stroy-text {
+    width: 100%;
   }
 }

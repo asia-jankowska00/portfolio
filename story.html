@@ -17,80 +17,79 @@
   </head>
   <body>
     <header>
-      <div class="gradient-background text-light">
+      <div class="text-light gradient-half-background">
+        <div class="hero-image"></div>
         <img
           class="header-svg"
           src="/assets/images/svg/polygon-header.svg"
           alt=""
         />
 
-        <h2 class="header-title">&lt;Title /&gt;</h2>
+        <h2 class="header-title padding-x-large padding-y-small">
+          &lt;Story /&gt;
+        </h2>
 
         <nav class="nav-desktop">
           <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="skills.html">skills</a></li>
-            <li><a href="values.html">values</a></li>
-            <li><a href="story.html">story</a></li>
-            <li><a href="cases.html">cases</a></li>
+            <li class="white-underline-hover"><a href="index.html">home</a></li>
+            <li class="white-underline-hover">
+              <a href="skills.html">skills</a>
+            </li>
+            <li class="white-underline-hover">
+              <a href="values.html">values</a>
+            </li>
+            <li class="white-underline-hover">
+              <a href="story.html">story</a>
+            </li>
+            <li class="white-underline-hover">
+              <a href="cases.html">cases</a>
+            </li>
           </ul>
         </nav>
 
         <nav class="nav-mobile">
-          <i class="fas fa-bars" id="menuHamburger"></i>
-          <ul class="gradient-background display-none" id="menuUl">
+          <h2 class="margin-0">
+            <i class="fas fa-bars" id="menuHamburger"></i>
+          </h2>
+          <ul class="gradient-half-background display-none" id="menuUl">
             <li><a href="index.html">home</a></li>
             <li><a href="skills.html">skills</a></li>
             <li><a href="values.html">values</a></li>
             <li><a href="story.html">story</a></li>
             <li><a href="cases.html">cases</a></li>
+            <li class="hero-image"></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section class="padding-x-medium padding-y-medium blurb">
-      <h1 class="text-center">&lt;Front end developer /&gt;</h1>
-      <div class="flex">
-        <img
-          class="blurb-image hide-small"
-          src="assets/images/svg/icon-webdev3.svg"
-          alt=""
-        />
-        <div class="flex blurb-content">
-          <h4 class="subtitle">
-            "A person who creates user interfaces and websites."
-          </h4>
-          <p class="width-75">
-            That's me! But I do more than just build websites and interfaces – I
-            create elegant, thoughtful digital experiences, that delight the
-            users and satisfy stakeholder’s expectations.
-          </p>
-          <div class="flex blurb-links">
-            <h4 class="gradient-underline-hover">
-              my skills <i class="fas fa-long-arrow-alt-right"></i>
-            </h4>
-            <h4 class="gradient-underline-hover">
-              my values <i class="fas fa-long-arrow-alt-right"></i>
-            </h4>
-            <h4 class="gradient-underline-hover">
-              my story <i class="fas fa-long-arrow-alt-right"></i>
-            </h4>
-          </div>
-        </div>
+    <section class="padding-x-large padding-y-large story flex">
+      <div class="story-image">
+        <img class="width-75" src="assets/images/CV-photo-bw.png" alt="" />
       </div>
-    </section>
-
-    <section class="padding-x-medium padding-y-large cases">
-      <h1 class="text-center">&lt;Cases /&gt;</h1>
-      <h4 class="subtitle">
-        projects I've worked on
-      </h4>
-      <div class="flex cases-showcase">
-        <div class="case"></div>
-        <div class="case"></div>
-        <div class="case"></div>
+      <div class="story-text">
+        <p>
+          My name is Joanna. I’m a front end developer currently residing in
+          Aalborg, DK.
+        </p>
+        <p>
+          I’m studying Multimedia Design at UCN, with the goal to finish with a
+          Bachelor’s degree in Web Development.
+        </p>
+        <p>
+          Since starting my adventure with coding I have been pursuing it
+          relentlessly. I am always tracking the news, taking up courses on
+          various emerging technologies, and keeping my skills sharp and
+          up-to-date.
+        </p>
+        <p>
+          On the side I take up drawing and painting, which I’ve been doing
+          since I could hold a pencil. Both of those hobbies have equipped me
+          with an incredibly sharp aesthetic sense and a healthy level of
+          perfectionism.
+        </p>
       </div>
+      <!-- </div> -->
     </section>
 
     <footer class="text-light">
@@ -104,26 +103,22 @@
             <i class="fab fa-linkedin"></i>
           </h2>
           <h6 class="text-thin">
-            <a href="#">Back to top <i class="fas fa-arrow-up"></i></a>
+            <a href="#" class="white-underline-hover padding-y-extra-small"
+              >Back to top <i class="fas fa-arrow-up"></i
+            ></a>
           </h6>
           <h6 class="text-thin">&copy; Joanna Jankowska</h6>
         </div>
       </div>
-      <div class="footer-gradient gradient-background"></div>
+      <div class="footer-gradient gradient-half-background"></div>
     </footer>
 
-    <div class="bg-wrapper full-vh-margin">
-      <img class="bg-svg" src="/assets/images/svg/polygon-bg-flat.svg" alt="" />
+    <div class="bg-wrapper">
       <img
-        class="bg-svg hide-medium hide-small"
+        class="bg-svg margin-first"
         src="/assets/images/svg/polygon-bg-flat.svg"
         alt=""
       />
-      <!-- <img
-        class="bg-svg hide-medium hide-small"
-        src="/assets/images/svg/polygon-bg-flat.svg"
-        alt=""
-      /> -->
     </div>
   </body>
 </html>

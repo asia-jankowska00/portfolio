@@ -17,26 +17,52 @@
 
   /* Background */
 
+  /* .margin-first {
+    margin-top: 60vh;
+  } */
+
   .bg-svg {
     width: auto;
-    height: 50vh;
+    height: 60vh;
   }
 
   /* Header */
 
   header.header-homepage h3.header-title {
+    top: 30%;
     left: 45%;
   }
 
   header.header-homepage h1.header-title {
+    top: 40%;
     left: 45%;
   }
 
   /* Footer */
 
-  footer .flex {
+  /* footer .flex {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  } */
+
+  /* Skills */
+
+  .skills-icons {
+    width: 35%;
+  }
+
+  .skills-text {
+    width: 60%;
+  }
+
+  /* Story */
+
+  .story-image {
+    width: 35%;
+  }
+
+  .story-text {
+    width: 65%;
   }
 }

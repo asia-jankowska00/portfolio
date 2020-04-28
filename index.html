@@ -17,7 +17,9 @@
   </head>
   <body>
     <header class="header-homepage">
-      <div class="gradient-background text-light">
+      <!-- <div class="gradient-bg"></div> -->
+      <div class="hero-image"></div>
+      <div class="text-light gradient-half-background">
         <img
           class="header-svg"
           src="/assets/images/svg/polygon-header.svg"
@@ -48,13 +50,16 @@
           <h2 class="margin-0">
             <i class="fas fa-bars" id="menuHamburger"></i>
           </h2>
-          <ul class="gradient-background display-none" id="menuUl">
+          <!-- <div class="hero-image"> -->
+          <ul class="gradient-half-background display-none" id="menuUl">
             <li><a href="index.html">home</a></li>
             <li><a href="skills.html">skills</a></li>
             <li><a href="values.html">values</a></li>
             <li><a href="story.html">story</a></li>
             <li><a href="cases.html">cases</a></li>
+            <li class="hero-image"></li>
           </ul>
+          <!-- </div> -->
         </nav>
 
         <h3 class="header-title">&lt;hello world /&gt;</h3>
@@ -69,7 +74,7 @@
       <h1 class="text-center">&lt;Front end developer /&gt;</h1>
       <div class="flex">
         <img
-          class="blurb-image hide-small"
+          class="blurb-image hide-small hide-medium"
           src="assets/images/svg/icon-webdev3.svg"
           alt=""
         />
@@ -77,10 +82,12 @@
           <h4 class="subtitle">
             "A person who creates user interfaces and websites."
           </h4>
-          <p class="width-75">
-            That's me! But I do more than just build websites and interfaces – I
-            create elegant, thoughtful digital experiences, that delight the
-            users and satisfy stakeholder’s expectations.
+          <p class="">
+            That's me! But I do more than just build websites and interfaces –
+            <br />I create elegant, thoughtful
+            <strong>digital experiences</strong>,<br />
+            that <strong>delight</strong> the users and
+            <strong>satisfy</strong> stakeholder’s expectations.
           </p>
           <div class="flex blurb-links">
             <a href="skills.html"
@@ -130,7 +137,7 @@
           <h6 class="text-thin">&copy; Joanna Jankowska</h6>
         </div>
       </div>
-      <div class="footer-gradient gradient-background"></div>
+      <div class="footer-gradient gradient-half-background"></div>
     </footer>
 
     <div class="bg-wrapper full-vh-margin">

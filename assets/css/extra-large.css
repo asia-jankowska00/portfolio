@@ -19,4 +19,40 @@
     margin-top: 45vh;
     width: 100vw;
   }
+
+  .margin-first {
+    margin-top: 70vh;
+  }
+
+  /* Header */
+
+  header.header-homepage h3.header-title {
+    top: 30%;
+    left: 50%;
+  }
+
+  header.header-homepage h1.header-title {
+    top: 40%;
+    left: 50%;
+  }
+
+  /* Skills */
+
+  .skills-icons {
+    width: 35%;
+  }
+
+  .skills-text {
+    width: 60%;
+  }
+
+  /* Story */
+
+  .story-image {
+    width: 35%;
+  }
+
+  .story-text {
+    width: 65%;
+  }
 }

@@ -2,7 +2,7 @@
   /* Global */
 
   html {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 
   .hide-small {
@@ -18,6 +18,12 @@
   .bg-svg {
     width: auto;
     height: 65vh;
+  }
+
+  .hero-image {
+    background-image: url(/assets/images/hero-image.jpg);
+    background-size: cover;
+    background-position: center top;
   }
 
   /* Header */
@@ -54,6 +60,40 @@
 
   .blurb-links {
     flex-direction: column;
-    /* justify-content: space-between; */
+  }
+
+  /* Skills */
+
+  section.skills > .flex {
+    flex-direction: column;
+  }
+
+  .skills-icons {
+    width: 100%;
+  }
+
+  .skills-text {
+    width: 100%;
+  }
+
+  /* Story */
+
+  section.story {
+    flex-direction: column;
+  }
+
+  .story-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4vw;
+  }
+
+  .story-image img {
+    width: 50%;
+  }
+
+  .stroy-text {
+    width: 100%;
   }
 }
