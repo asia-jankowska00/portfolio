@@ -56,15 +56,30 @@
     order: 3;
   }
 
-  /* Blurb */
+  /* Homepage */
+
+  .blurb-content {
+    flex-direction: column;
+    width: 100%;
+  }
 
   .blurb-links {
+    padding: 8vw 0;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .cases-showcase {
+    flex-direction: column;
+  }
+
+  .case {
+    width: 100%;
   }
 
   /* Skills */
 
-  section.skills > .flex {
+  section.skills {
     flex-direction: column;
   }
 
@@ -76,6 +91,24 @@
     width: 100%;
   }
 
+  /* Values */
+
+  section.values {
+    flex-direction: column;
+  }
+
+  .values-icons {
+    width: 100%;
+  }
+
+  .values-text {
+    width: 100%;
+  }
+
+  .values-icons:nth-of-type(2) {
+    order: -1;
+  }
+
   /* Story */
 
   section.story {
@@ -83,17 +116,37 @@
   }
 
   .story-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 4vw;
-  }
-
-  .story-image img {
-    width: 50%;
+    background-image: url(/assets/images/CV-photo-bw-200.png);
+    background-position: center;
+    height: 50vw;
+    margin-bottom: 4vw;
   }
 
   .stroy-text {
+    width: 100%;
+  }
+
+  .portfolio-link {
+    width: 100%;
+  }
+
+  /* Cases */
+
+  section.cases {
+    margin-bottom: 10vh;
+    flex-direction: column;
+  }
+
+  .cases-info:nth-of-type(2) {
+    order: -1;
+  }
+
+  .cases-info {
+    width: 100%;
+  }
+
+  .cases-image {
+    height: 50vh;
     width: 100%;
   }
 }

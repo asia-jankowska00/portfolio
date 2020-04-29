@@ -22,8 +22,8 @@
   } */
 
   .bg-svg {
-    width: auto;
-    height: 60vh;
+    width: 100%;
+    /* height: 60vh; */
   }
 
   /* Header */
@@ -46,6 +46,22 @@
     justify-content: space-between;
   } */
 
+  /* Homepage */
+
+  .blurb-image {
+    padding: 5vw 10vw 10vw 5vw;
+    width: 40%;
+  }
+
+  .blurb-content {
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .blurb-links {
+    justify-content: space-between;
+  }
+
   /* Skills */
 
   .skills-icons {
@@ -56,10 +72,21 @@
     width: 60%;
   }
 
+  /* Values */
+
+  .values-icons {
+    width: 50%;
+  }
+
+  .values-text {
+    width: 50%;
+  }
+
   /* Story */
 
   .story-image {
-    width: 35%;
+    width: 30%;
+    background-image: url(/assets/images/CV-photo-bw-400.png);
   }
 
   .story-text {
