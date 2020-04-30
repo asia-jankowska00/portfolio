@@ -3,13 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/assets/images/favicons/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/assets/images/favicons/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/assets/images/favicons/favicon-16x16.png"
+  />
+  <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <title>Skills | Portfolio - Joanna Jankowska</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/small.css" />
     <link rel="stylesheet" href="assets/css/medium.css" />
     <link rel="stylesheet" href="assets/css/large.css" />
     <link rel="stylesheet" href="assets/css/extra-large.css" />
     <script src="assets/js/script.js" defer></script>
+    <script src="/assets/js/typewriter.js" defer></script>
+    <script src="/assets/js/animations.js" defer></script>
     <script
       src="https://kit.fontawesome.com/24893e2831.js"
       crossorigin="anonymous"
@@ -25,13 +45,18 @@
           alt=""
         />
 
-        <h2 class="header-title padding-x-large padding-y-small">
-          &lt;Skills /&gt;
-        </h2>
+        <h2
+          class="txt-type header-title padding-x-large padding-y-small"
+          data-wait="500"
+          data-words='"&lt; Skills / &gt;"'
+        ></h2>
 
         <nav class="nav-desktop">
           <ul>
             <li class="white-underline-hover"><a href="index.html">home</a></li>
+            <li class="white-underline-hover">
+              <a href="projects.html">projects</a>
+            </li>
             <li class="white-underline-hover">
               <a href="skills.html">skills</a>
             </li>
@@ -41,9 +66,7 @@
             <li class="white-underline-hover">
               <a href="story.html">story</a>
             </li>
-            <li class="white-underline-hover">
-              <a href="cases.html">cases</a>
-            </li>
+
           </ul>
         </nav>
 
@@ -53,17 +76,17 @@
           </h2>
           <ul class="gradient-half-background display-none" id="menuUl">
             <li><a href="index.html">home</a></li>
+            <li><a href="projects.html">projects</a></li>
             <li><a href="skills.html">skills</a></li>
             <li><a href="values.html">values</a></li>
             <li><a href="story.html">story</a></li>
-            <li><a href="cases.html">cases</a></li>
             <li class="hero-image"></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section class="padding-x-large padding-y-small flex skills">
+    <section class="padding-x-large padding-y-small flex skills show-on-scroll">
       <div class="skills-icons">
         <h1>HTML, CSS, JavaScript</h1>
       </div>
@@ -84,7 +107,7 @@
       </div>
     </section>
 
-    <section class="padding-x-large padding-y-small flex skills">
+    <section class="padding-x-large padding-y-small flex skills show-on-scroll">
       <div class="skills-icons">
         <h1>React, jQuery, Bootstrap, Tailwind</h1>
       </div>
@@ -103,7 +126,7 @@
       </div>
     </section>
 
-    <section class="padding-x-large padding-y-small flex skills">
+    <section class="padding-x-large padding-y-small flex skills show-on-scroll">
       <div class="skills-icons">
         <h1>Git, Scrum, Agile</h1>
       </div>
@@ -116,13 +139,12 @@
         <p>
           I know how to work in <strong>agile</strong> methodologies, such as
           <strong>Scrum</strong>. I know how to utilize digital tools like
-          Kanban boards and communicators such as Microsoft Teams to my greatest
-          benefit.
+          Kanban boards and communicators such as Microsoft Teams to aid me in teamwork.
         </p>
       </div>
     </section>
 
-    <section class="padding-x-large padding-y-small flex skills">
+    <section class="padding-x-large padding-y-small flex skills show-on-scroll">
       <div class="skills-icons">
         <h1>
           Design,<br />
@@ -145,7 +167,7 @@
       </div>
     </section>
 
-    <section class="padding-x-large padding-y-small flex skills">
+    <section class="padding-x-large padding-y-small flex skills show-on-scroll">
       <div class="skills-icons">
         <h1>
           Photoshop, Illustrator, Adobe Xd
@@ -166,7 +188,7 @@
     </section>
 
     <footer class="text-light">
-      <div class="footer-wrapper">
+      <div class="footer-wrapper show-on-scroll">
         <h3>&lt; Sounds interesting? /&gt;</h3>
         <h6 class="text-thin">Let's talk about what we can make together:</h6>
         <h5>asia.jankowska00@gmail.com</h5>
@@ -189,23 +211,6 @@
       </div>
       <div class="footer-gradient gradient-half-background"></div>
     </footer>
-
-    <div class="bg-wrapper">
-      <img
-        class="bg-svg margin-first"
-        src="/assets/images/svg/polygon-bg-flat.svg"
-        alt=""
-      />
-      <img
-        class="bg-svg hide-medium hide-small"
-        src="/assets/images/svg/polygon-bg-flat.svg"
-        alt=""
-      />
-      <!-- <img
-        class="bg-svg hide-medium hide-small"
-        src="/assets/images/svg/polygon-bg-flat.svg"
-        alt=""
-      /> -->
     </div>
   </body>
 </html>

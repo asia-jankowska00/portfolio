@@ -3,13 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <title>Portfolio - Joanna Jankowska</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/small.css" />
     <link rel="stylesheet" href="assets/css/medium.css" />
     <link rel="stylesheet" href="assets/css/large.css" />
     <link rel="stylesheet" href="assets/css/extra-large.css" />
     <script src="assets/js/script.js" defer></script>
+    <script src="/assets/js/typewriter.js" defer></script>
+    <script src="/assets/js/animations.js" defer></script>
     <script
       src="https://kit.fontawesome.com/24893e2831.js"
       crossorigin="anonymous"
@@ -26,9 +46,12 @@
           alt=""
         />
 
-        <nav class="nav-desktop">
+        <nav class="nav-desktop show-on-scroll">
           <ul>
             <li class="white-underline-hover"><a href="index.html">home</a></li>
+            <li class="white-underline-hover">
+              <a href="projects.html">projects</a>
+            </li>
             <li class="white-underline-hover">
               <a href="skills.html">skills</a>
             </li>
@@ -38,39 +61,59 @@
             <li class="white-underline-hover">
               <a href="story.html">story</a>
             </li>
-            <li class="white-underline-hover">
-              <a href="cases.html">cases</a>
-            </li>
           </ul>
         </nav>
 
         <!-- <i class="fas fa-bars"></i> -->
 
-        <nav class="nav-mobile">
+        <nav class="nav-mobile show-on-scroll">
           <h2 class="margin-0">
             <i class="fas fa-bars" id="menuHamburger"></i>
           </h2>
           <!-- <div class="hero-image"> -->
-          <ul class="gradient-half-background display-none" id="menuUl">
-            <li><a href="index.html">home</a></li>
-            <li><a href="skills.html">skills</a></li>
-            <li><a href="values.html">values</a></li>
-            <li><a href="story.html">story</a></li>
-            <li><a href="cases.html">cases</a></li>
-            <li class="hero-image"></li>
+          <ul class="hidden" id="menuUl">
+            <li class="gradient-half-background">
+              <a href="index.html">home</a>
+            </li>
+            <li class="gradient-half-background">
+              <a href="projects.html">projects</a>
+            </li>
+            <li class="gradient-half-background">
+              <a href="skills.html">skills</a>
+            </li>
+            <li class="gradient-half-background">
+              <a href="values.html">values</a>
+            </li>
+            <li class="gradient-half-background">
+              <a href="story.html">story</a>
+            </li>
+            <!-- <li class="hero-image"></li> -->
           </ul>
           <!-- </div> -->
         </nav>
 
-        <h3 class="header-title">&lt;hello world /&gt;</h3>
+        <h3
+          class="txt-type header-title"
+          data-wait="500"
+          data-words='"&lt; hello world / &gt;"'
+        ></h3>
+        <h1
+          class="txt-type header-title"
+          data-wait="1800"
+          data-words='"I&apos;m Joanna &lt;br/ &gt; - a front end developer."'
+        ></h1>
+
+        <!-- <h3 class="header-title">&lt;hello world /&gt;</h3>
         <h1 class="header-title">
           I'm Joanna - <br />
           a front end developer.
-        </h1>
+        </h1> -->
       </div>
     </header>
 
-    <section class="padding-x-medium mt-25 padding-y-large blurb">
+    <section
+      class="padding-x-medium mt-25 padding-y-large blurb show-on-scroll"
+    >
       <h1 class="text-center">&lt;Front end developer /&gt;</h1>
       <h4 class="text-center subtitle">
         "A person who creates user interfaces and websites."
@@ -87,7 +130,7 @@
             <br />I create elegant, thoughtful
             <strong>digital experiences</strong>,<br />
             that <strong>delight</strong> the users and
-            <strong>satisfy</strong> stakeholder’s expectations.
+            <strong>satisfy</strong> stakeholders' expectations.
           </p>
           <div class="flex blurb-links">
             <a href="skills.html"
@@ -107,14 +150,16 @@
       </div>
     </section>
 
-    <section class="padding-x-small padding-y-medium mb-25 flex homepage-cases">
-      <h1 class="text-center">&lt;Cases /&gt;</h1>
+    <section
+      class="padding-x-small padding-y-medium mb-25 flex homepage-cases show-on-scroll"
+    >
+      <h1 class="text-center">&lt;Projects /&gt;</h1>
       <h4 class="subtitle text-center">
-        projects I've worked on
+        things I've worked on
       </h4>
-      <a href="cases.html"
+      <a href="projects.html"
         ><h4 class="padding-y-extra-small gradient-underline-hover">
-          see all cases <i class="fas fa-long-arrow-alt-right"></i></h4
+          see all projects <i class="fas fa-long-arrow-alt-right"></i></h4
       ></a>
       <div class="flex cases-showcase">
         <div class="case">
@@ -142,7 +187,7 @@
     </section>
 
     <footer class="text-light">
-      <div class="footer-wrapper">
+      <div class="footer-wrapper show-on-scroll">
         <h3>&lt; Sounds interesting? /&gt;</h3>
         <h6 class="text-thin">Let's talk about what we can make together:</h6>
         <a href="mailto:asia.jankowska00@gmail.com"
@@ -167,19 +212,5 @@
       </div>
       <div class="footer-gradient gradient-half-background"></div>
     </footer>
-
-    <div class="bg-wrapper full-vh-margin">
-      <img class="bg-svg" src="/assets/images/svg/polygon-bg-flat.svg" alt="" />
-      <img
-        class="bg-svg hide-medium hide-small"
-        src="/assets/images/svg/polygon-bg-flat.svg"
-        alt=""
-      />
-      <!-- <img
-        class="bg-svg hide-medium hide-small"
-        src="/assets/images/svg/polygon-bg-flat.svg"
-        alt=""
-      /> -->
-    </div>
   </body>
 </html>

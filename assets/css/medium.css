@@ -15,9 +15,13 @@
 
   /* Background */
 
-  .bg-svg {
-    width: auto;
-    height: 60vh;
+  section:nth-of-type(2n):after {
+    background-image: url(/assets/images/svg/polygon-bg-sharp-half.png);
+  }
+
+  section.blurb:after,
+  section.homepage-cases:after {
+    background-image: url(/assets/images/svg/polygon-bg-sharp-half.png);
   }
 
   .hero-image {
@@ -40,6 +44,12 @@
   header.header-homepage h1.header-title {
     top: 40%;
     left: 10%;
+  }
+
+  /* Nav */
+
+  nav.nav-mobile ul li {
+    padding: 3vw 10vw;
   }
 
   /* Footer */
@@ -123,6 +133,7 @@
     background-image: url(/assets/images/CV-photo-bw-200.png);
     background-position: center;
     height: 30vw;
+    min-width: 30vw;
     margin-bottom: 4vw;
   }
 
@@ -151,6 +162,11 @@
 
   .cases-image {
     height: 50vh;
+    width: 100%;
+  }
+
+  .case-view-buttons {
+    flex-direction: column;
     width: 100%;
   }
 }

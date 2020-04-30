@@ -15,9 +15,13 @@
 
   /* Background */
 
-  .bg-svg {
-    width: auto;
-    height: 65vh;
+  section:nth-of-type(2n):after {
+    background-image: url(/assets/images/svg/polygon-bg-sharp-half.png);
+  }
+
+  section.blurb:after,
+  section.homepage-cases:after {
+    background-image: url(/assets/images/svg/polygon-bg-sharp-half.png);
   }
 
   .hero-image {
@@ -119,6 +123,7 @@
     background-image: url(/assets/images/CV-photo-bw-200.png);
     background-position: center;
     height: 50vw;
+    min-width: 50vw;
     margin-bottom: 4vw;
   }
 
@@ -135,6 +140,7 @@
   section.cases {
     margin-bottom: 10vh;
     flex-direction: column;
+    word-wrap: break-word;
   }
 
   .cases-info:nth-of-type(2) {
@@ -143,10 +149,16 @@
 
   .cases-info {
     width: 100%;
+    word-wrap: break-word;
   }
 
   .cases-image {
     height: 50vh;
+    width: 100%;
+  }
+
+  .case-view-buttons {
+    flex-direction: column;
     width: 100%;
   }
 }

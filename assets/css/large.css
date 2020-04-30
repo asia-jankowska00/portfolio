@@ -87,9 +87,17 @@
   .story-image {
     width: 30%;
     background-image: url(/assets/images/CV-photo-bw-400.png);
+    min-height: 30vw;
   }
 
   .story-text {
     width: 65%;
+  }
+
+  /* Cases */
+
+  .case-view-buttons {
+    justify-content: space-between;
+    width: 60%;
   }
 }

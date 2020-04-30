@@ -11,11 +11,26 @@ const menuUl = $("#menuUl");
 const header = $("header");
 const navDesktop = $(".nav-desktop");
 const navDesktopLis = navDesktop.querySelectorAll("li");
+const navMobile = $(".nav-mobile");
 const body = $("body");
+let headerHeight;
 
 menuHamburger.addEventListener("click", () => {
-  menuUl.classList.toggle("display-none");
+  menuHamburger.classList.toggle("fa-bars");
+  menuHamburger.classList.toggle("fa-times");
+  menuUl.classList.toggle("hidden");
   header.classList.toggle("overflow-visible");
+  headerHeight = header.offsetHeight;
+  headerHeight -= headerHeight * 0.4;
+  if (window.scrollY > headerHeight) {
+    if (menuHamburger.classList.contains("fa-bars")) {
+      setTimeout(() => {
+        navMobile.classList.toggle("invert");
+      }, 1300);
+    } else {
+      navMobile.classList.toggle("invert");
+    }
+  }
 });
 
 const checkNavPosition = () => {
@@ -27,15 +42,19 @@ const checkNavPosition = () => {
 };
 
 const scrollNavStyler = (offsetPercent) => {
-  let headerHeight = header.offsetHeight;
+  headerHeight = header.offsetHeight;
   headerHeight -= headerHeight * offsetPercent;
   if (window.scrollY > headerHeight) {
+    if (menuUl.classList.contains("hidden")) {
+      navMobile.classList.add("invert");
+    }
     navDesktop.classList.add("invert");
     navDesktopLis.forEach((li) => {
       li.classList.remove("white-underline-hover");
       li.classList.add("gradient-underline-hover");
     });
   } else {
+    navMobile.classList.remove("invert");
     navDesktop.classList.remove("invert");
     navDesktopLis.forEach((li) => {
       li.classList.remove("gradient-underline-hover");
@@ -50,3 +69,4 @@ const scrollNavStyler = (offsetPercent) => {
 };
 
 window.addEventListener("scroll", checkNavPosition);
+window.onload = checkNavPosition();
