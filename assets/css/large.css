@@ -100,4 +100,8 @@
     justify-content: space-between;
     width: 60%;
   }
+
+  .diabetes-img {
+    width: 25vw;
+  }
 }

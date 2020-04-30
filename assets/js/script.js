@@ -19,7 +19,8 @@ menuHamburger.addEventListener("click", () => {
   menuHamburger.classList.toggle("fa-bars");
   menuHamburger.classList.toggle("fa-times");
   menuUl.classList.toggle("hidden");
-  header.classList.toggle("overflow-visible");
+  navMobile.classList.toggle("pointer-events-none");
+  // header.classList.toggle("overflow-visible");
   headerHeight = header.offsetHeight;
   headerHeight -= headerHeight * 0.4;
   if (window.scrollY > headerHeight) {

@@ -25,7 +25,7 @@
   }
 
   .hero-image {
-    background-image: url(/assets/images/hero-image.jpg);
+    background-image: url(/assets/images/hero-image-1k.jpg);
     background-size: cover;
     background-position: center top;
   }
@@ -79,6 +79,7 @@
 
   .case {
     width: 100%;
+    margin-bottom: 20vw;
   }
 
   /* Skills */
@@ -152,6 +153,10 @@
     word-wrap: break-word;
   }
 
+  .cases-info a h4 {
+    margin-bottom: 20vw;
+  }
+
   .cases-image {
     height: 50vh;
     width: 100%;
@@ -159,6 +164,10 @@
 
   .case-view-buttons {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .diabetes-img {
     width: 100%;
   }
 }
