@@ -49,6 +49,8 @@
   /* Footer */
 
   footer .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 
@@ -57,23 +59,31 @@
   }
 
   footer .flex h6:first-of-type {
+    -webkit-box-ordinal-group: 4;
     order: 3;
   }
 
   /* Homepage */
 
   .blurb-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     width: 100%;
   }
 
   .blurb-links {
     padding: 8vw 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-align: center;
     align-items: center;
   }
 
   .cases-showcase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 
@@ -85,6 +95,8 @@
   /* Skills */
 
   section.skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 
@@ -99,6 +111,8 @@
   /* Values */
 
   section.values {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 
@@ -111,12 +125,15 @@
   }
 
   .values-icons:nth-of-type(2) {
+    -webkit-box-ordinal-group: 0;
     order: -1;
   }
 
   /* Story */
 
   section.story {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 
@@ -140,11 +157,14 @@
 
   section.cases {
     margin-bottom: 10vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     word-wrap: break-word;
   }
 
   .cases-info:nth-of-type(2) {
+    -webkit-box-ordinal-group: 0;
     order: -1;
   }
 
@@ -163,6 +183,8 @@
   }
 
   .case-view-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     width: 100%;
   }

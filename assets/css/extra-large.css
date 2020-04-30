@@ -44,11 +44,14 @@
   }
 
   .blurb-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     width: 50%;
   }
 
   .blurb-links {
+    -webkit-box-pack: justify;
     justify-content: space-between;
   }
 
@@ -87,6 +90,7 @@
   /* Cases */
 
   .case-view-buttons {
+    -webkit-box-pack: justify;
     justify-content: space-between;
     width: 50%;
   }
