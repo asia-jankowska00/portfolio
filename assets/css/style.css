@@ -208,7 +208,7 @@ strong {
 html {
   font-family: var(--font-primary);
   scroll-behavior: smooth;
-  cursor: url(/assets/images/black-cursor.png), default;
+  cursor: url(../images/black-cursor.png), default;
 }
 
 body {
@@ -292,7 +292,7 @@ section:nth-of-type(2n):after {
   z-index: -9999;
   top: -10%;
   left: 0;
-  background-image: url(/assets/images/svg/polygon-bg-sharp.png);
+  background-image: url(../images/svg/polygon-bg-sharp.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -308,7 +308,7 @@ section.homepage-cases:after {
   z-index: -9999;
   top: 20%;
   left: 0;
-  background-image: url(/assets/images/svg/polygon-bg-sharp.png);
+  background-image: url(../images/svg/polygon-bg-sharp.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -320,7 +320,7 @@ section.homepage-cases:after {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(/assets/images/hero-image-2k.jpg);
+  background-image: url(../images/hero-image-2k.jpg);
   background-size: cover;
   background-position: right bottom;
   opacity: 0.2;
@@ -817,21 +817,21 @@ section.homepage-cases {
 }
 
 .case-1 {
-  background-image: url(/assets/images/projects/svalegaarden/svalegaarden-12.png);
+  background-image: url(../images/projects/svalegaarden/svalegaarden-12.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .case-2 {
-  background-image: url(/assets/images/projects/diabetes/diabetes-landing-m.png);
+  background-image: url(../images/projects/diabetes/diabetes-landing-m.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .case-3 {
-  background-image: url(/assets/images/projects/ungdomsringens/ungdomsringens-12.png);
+  background-image: url(../images/projects/ungdomsringens/ungdomsringens-12.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -921,7 +921,7 @@ section.story {
 }
 
 .story-image {
-  background-image: url(/assets/images/CV-photo-bw-400.png);
+  background-image: url(../images/CV-photo-bw-400.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: auto;

@@ -16,16 +16,16 @@
   /* Background */
 
   section:nth-of-type(2n):after {
-    background-image: url(/assets/images/svg/polygon-bg-sharp-half.png);
+    background-image: url(../images/svg/polygon-bg-sharp-half.png);
   }
 
   section.blurb:after,
   section.homepage-cases:after {
-    background-image: url(/assets/images/svg/polygon-bg-sharp-half.png);
+    background-image: url(../images/svg/polygon-bg-sharp-half.png);
   }
 
   .hero-image {
-    background-image: url(/assets/images/hero-image-1k.jpg);
+    background-image: url(../images/hero-image-1k.jpg);
     background-size: cover;
     background-position: center bottom;
   }
@@ -60,7 +60,7 @@
     flex-direction: column;
   }
 
-  footer .flex a {
+  footer .flex h6 a {
     margin-left: 0;
   }
 
@@ -99,6 +99,7 @@
 
   .case {
     width: 100%;
+    margin-bottom: 20vw;
   }
 
   /* Skills */
@@ -148,7 +149,7 @@
   }
 
   .story-image {
-    background-image: url(/assets/images/CV-photo-bw-200.png);
+    background-image: url(../images/CV-photo-bw-200.png);
     background-position: center;
     height: 30vw;
     min-width: 30vw;

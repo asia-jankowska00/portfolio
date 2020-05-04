@@ -79,7 +79,7 @@
 
   .story-image {
     width: 30%;
-    background-image: url(/assets/images/CV-photo-bw-400.png);
+    background-image: url(../images/CV-photo-bw-400.png);
     min-height: 30vw;
   }
 

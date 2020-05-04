@@ -35,7 +35,9 @@ menuHamburger.addEventListener("click", () => {
 });
 
 const checkNavPosition = () => {
-  if (window.location.pathname === "/index.html") {
+  let path = window.location.pathname.split("/");
+  path = path[path.length - 1];
+  if (path === "index.html") {
     scrollNavStyler(0.1);
   } else {
     scrollNavStyler(0.4);
