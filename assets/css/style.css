@@ -774,10 +774,10 @@ footer .flex {
   margin-top: 2rem;
 }
 
-footer .flex h6 a {
-  /* margin-left: 7vw; */
-  border-top: 2px solid white;
-}
+/* footer .flex h6 a { */
+/* margin-left: 7vw; */
+/* border-top: 2px solid white; */
+/* } */
 
 footer .flex > * {
   width: 30%;
