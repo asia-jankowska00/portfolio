@@ -15,6 +15,17 @@ const navMobile = $(".nav-mobile");
 const body = $("body");
 let headerHeight;
 
+const preloadImages = () => {
+  let imgsToPreload = [
+    "../assets/images/hero-image-1k.jpg",
+    "../assets/images/hero-image-2k.jpg",
+  ];
+  imgsToPreload.forEach((image) => {
+    let img = new Image();
+    img.src = image;
+  });
+};
+
 menuHamburger.addEventListener("click", () => {
   menuHamburger.classList.toggle("fa-bars");
   menuHamburger.classList.toggle("fa-times");
@@ -72,4 +83,7 @@ const scrollNavStyler = (offsetPercent) => {
 };
 
 window.addEventListener("scroll", checkNavPosition);
-window.onload = checkNavPosition();
+window.onload = () => {
+  checkNavPosition();
+  preloadImages();
+};

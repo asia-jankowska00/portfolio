@@ -92,7 +92,7 @@
   .case-view-buttons {
     -webkit-box-pack: justify;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
   }
 
   .diabetes-img {

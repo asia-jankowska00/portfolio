@@ -176,6 +176,14 @@ strong {
   /* opacity: 0; */
 }
 
+.img-preload {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  left: -1000;
+  top: -1000;
+}
+
 .visible {
   opacity: 1;
   -webkit-transition: 1s opacity 0.3s ease-out;
@@ -582,7 +590,7 @@ header > div {
   -ms-user-select: none;
   user-select: none;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 
 header .header-title {
@@ -752,6 +760,7 @@ nav.nav-mobile i {
 footer {
   background-color: var(--grey-6);
   text-align: center;
+  z-index: 1000;
 }
 
 footer .flex {
@@ -762,14 +771,45 @@ footer .flex {
   align-items: center;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 footer .flex h6 a {
-  margin-left: 7vw;
+  /* margin-left: 7vw; */
+  border-top: 2px solid white;
+}
+
+footer .flex > * {
+  width: 30%;
+}
+
+/* footer .fa-file {
+  margin: 2rem 0;
+} */
+
+footer h6 {
+  color: var(--grey-4);
 }
 
 footer h5 {
   margin: 2rem 0;
+}
+
+footer .fa-linkedin,
+footer .fa-github {
+  transition: 0.2s transform ease-in-out, 0.2s color ease-in-out;
+  color: var(--grey-4);
+}
+
+footer .fa-linkedin:hover,
+footer .fa-github:hover {
+  transform: scale(1.15);
+  color: var(--grey-1);
+}
+
+footer .copyright,
+footer .back-to-top {
+  color: var(--grey-3);
 }
 
 .footer-wrapper {
@@ -817,21 +857,21 @@ section.homepage-cases {
 }
 
 .case-1 {
-  background-image: url(../images/projects/svalegaarden/svalegaarden-12.png);
+  background-image: url(../images/projects/svalegaarden/svalegaarden-all-devices.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .case-2 {
-  background-image: url(../images/projects/diabetes/diabetes-landing-m.png);
+  background-image: url(../images/projects/diabetes/diabetes-presentation-mockup.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .case-3 {
-  background-image: url(../images/projects/ungdomsringens/ungdomsringens-12.png);
+  background-image: url(../images/projects/ungdomsringens/ungdomsringens-all-devices.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -936,7 +976,19 @@ section.cases {
 
 .cases-info {
   width: 40%;
+  display: flex;
   color: var(--grey-4);
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cases-info ul {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.cases-info h6 {
+  margin-top: 2rem;
 }
 
 .cases-image {
@@ -946,13 +998,16 @@ section.cases {
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
+  align-items: center;
 }
 
-.cases-image img {
+.cases-image img,
+.cases-image video {
   -o-object-fit: contain;
   object-fit: contain;
+  object-position: center;
   max-width: 100%;
-  max-height: 100%;
+  /* max-height: 100%; */
 }
 
 section.projects .cases-image img {
@@ -960,6 +1015,7 @@ section.projects .cases-image img {
   transition: 0.2s -webkit-transform ease-in-out;
   transition: 0.2s transform ease-in-out;
   transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
+  position: relative;
 }
 
 section.projects .cases-image img:hover {
