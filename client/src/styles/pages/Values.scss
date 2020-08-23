@@ -1,0 +1,59 @@
+@import "../base";
+
+/* Values */
+
+section.values {
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.values-icons {
+  color: $grey-4;
+}
+
+.values-icons:nth-child(2) {
+  text-align: right;
+}
+
+@include small {
+  section.values {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  .values-icons {
+    width: 100%;
+  }
+
+  .values-text {
+    width: 100%;
+  }
+
+  .values-icons:nth-of-type(2) {
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+}
+
+@include large {
+  .values-icons {
+    width: 50%;
+  }
+
+  .values-text {
+    width: 50%;
+  }
+}
+
+@include extra-large {
+  .values-icons {
+    width: 50%;
+  }
+
+  .values-text {
+    width: 50%;
+  }
+}

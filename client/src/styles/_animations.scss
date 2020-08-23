@@ -1,0 +1,96 @@
+/* Hover effects */
+
+.white-underline-hover {
+  position: relative;
+}
+
+/* animate from left */
+.awhite-underline-hover:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border-bottom: 2px solid white;
+}
+.awhite-underline-hover:hover:after {
+  right: 0;
+}
+
+/* animate from center */
+.white-underline-hover:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  background-color: $grey-1;
+  width: 0px;
+  height: 2px;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.white-underline-hover:hover:before {
+  width: 50%;
+}
+
+.white-underline-hover:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: $grey-1;
+  width: 0px;
+  height: 2px;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.white-underline-hover:hover:after {
+  width: 50%;
+}
+
+/* gradient underline */
+.gradient-underline-hover {
+  position: relative;
+}
+
+/* .gradient-underline-hover:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    background: linear-gradient(90deg, #6b2aa6, #543da6, #4a6acb, #42c5cd);
+    width: 0px;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.4s;
+  }
+  
+  .gradient-underline-hover:hover:before {
+    width: 50%;
+  } */
+
+.gradient-underline-hover:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: $gradient-half;
+  width: 0px;
+  height: 4px;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.gradient-underline-hover:hover:after {
+  width: 100%;
+}
