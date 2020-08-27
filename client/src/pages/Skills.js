@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 
 const Skills = () => {
   return (
-    <Layout>
+    <Layout textToType="Skills">
       <section className="padding-x-large padding-y-small flex skills show-on-scroll">
         <div className="skills-icons">
           <h1>HTML, CSS, JavaScript</h1>

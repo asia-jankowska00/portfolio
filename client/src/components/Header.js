@@ -5,7 +5,9 @@ import "../styles/components/Header.scss";
 import "../styles/components/Gradient.scss";
 import "../styles/components/Background.scss";
 
-const Header = () => {
+import Typewriter from "typewriter-effect";
+
+const Header = (props) => {
   return (
     <header>
       <div className="text-light gradient-half-background">
@@ -16,11 +18,16 @@ const Header = () => {
           alt=""
         />
 
-        <h2
-          className="txt-type header-title padding-x-large padding-y-small"
-          data-wait="500"
-          data-words='"&lt; Projects / &gt;"'
-        ></h2>
+        <h2 className="txt-type header-title padding-x-large padding-y-small">
+          <Typewriter
+            options={{
+              cursor: "",
+            }}
+            onInit={(typewriter) => {
+              typewriter.start().changeDelay(35).typeString(props.textToType);
+            }}
+          />
+        </h2>
 
         <Navigation></Navigation>
       </div>

@@ -8,6 +8,7 @@ nav ul {
   list-style: none;
   display: -webkit-box;
   display: flex;
+  z-index: 9999;
 }
 
 nav ul li a {
@@ -21,12 +22,12 @@ nav.nav-desktop {
 }
 
 nav.nav-desktop.invert {
-  background: var(--grey-2);
-  color: var(--grey-6);
+  background: $grey-2;
+  color: $grey-6;
 }
 
 nav.nav-mobile.invert i {
-  color: var(--grey-6);
+  color: $grey-6;
 }
 
 nav.nav-desktop ul {
@@ -39,7 +40,7 @@ nav.nav-mobile {
   position: fixed;
   width: 100%;
   z-index: 9999;
-  font-size: var(--font-xl);
+  font-size: $font-xl;
   overflow: hidden;
 }
 
