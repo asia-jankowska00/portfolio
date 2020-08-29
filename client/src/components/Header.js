@@ -1,22 +1,19 @@
 import React from "react";
 import Navigation from "./Navigation";
 
-import "../styles/components/Header.scss";
-import "../styles/components/Gradient.scss";
-import "../styles/components/Background.scss";
-
 import Typewriter from "typewriter-effect";
 
 const Header = (props) => {
   return (
-    <header>
+    <header className="header">
+      <Navigation></Navigation>
       <div className="text-light gradient-half-background">
         <div className="hero-image"></div>
-        <img
+        {/* <img
           className="header-svg"
           src="../assets/images/svg/polygon-header.svg"
           alt=""
-        />
+        /> */}
 
         <h2 className="txt-type header-title padding-x-large padding-y-small">
           <Typewriter
@@ -28,8 +25,6 @@ const Header = (props) => {
             }}
           />
         </h2>
-
-        <Navigation></Navigation>
       </div>
     </header>
   );

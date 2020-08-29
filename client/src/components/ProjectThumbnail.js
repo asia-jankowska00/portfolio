@@ -2,8 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ProjectThumbnail = (props) => {
+  const project = props.project;
   return (
-    <div className={`case ${props.caseClass}`}>
+    <div
+      className={`case `}
+      style={{
+        backgroundImage: `url(../../assets/images/projects/${project.displayImage})`,
+      }}
+      // background-image={`url(../../assets/images/projects/svalegaarden/svalegaarden-all-devices.png)`}
+    >
       <div className="case-hover">
         <Link to={`/projects/${props.projectPath}`}>
           <h4>

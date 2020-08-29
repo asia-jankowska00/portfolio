@@ -1,6 +1,9 @@
-@import "../base";
-
 /* Navigation */
+
+nav {
+  z-index: 9999;
+  color: $white;
+}
 
 nav ul {
   margin: 0;
@@ -12,11 +15,30 @@ nav ul {
 }
 
 nav ul li a {
+  color: inherit;
   display: inline-block;
   padding: 1vw 2.35vw;
 }
 
+nav ul li a .fab {
+  font-size: 2vw;
+  // padding: 0;
+}
+
+nav ul li:nth-child(6) {
+  position: absolute;
+  right: 0;
+  // padding: 0vw 2vw;
+}
+
+nav ul li:nth-child(6) a {
+  // font-size: 2vw;
+  padding: 0.75vw 0.75vw 0.75vw 0;
+}
+
 nav.nav-desktop {
+  transition: background 0.25s ease-in, color 0.25s ease-in,
+    box-shadow 0.25s ease-in;
   right: 0;
   position: fixed;
 }
@@ -24,6 +46,7 @@ nav.nav-desktop {
 nav.nav-desktop.invert {
   background: $grey-2;
   color: $grey-6;
+  box-shadow: 0 0 15px 0 rgba($color: #000000, $alpha: 0.25);
 }
 
 nav.nav-mobile.invert i {

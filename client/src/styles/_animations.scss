@@ -94,3 +94,7 @@
 .gradient-underline-hover:hover:after {
   width: 100%;
 }
+
+.animated {
+  animation-fill-mode: initial;
+}

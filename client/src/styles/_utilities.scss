@@ -90,6 +90,14 @@ strong {
   margin: 0;
 }
 
+.mr-4 {
+  margin-right: 4vw;
+}
+
+.mb-4 {
+  margin-bottom: 4vw;
+}
+
 .mt-25 {
   margin-top: 15vh;
 }
@@ -170,4 +178,47 @@ strong {
 
 .pointer-events-initial {
   pointer-events: initial !important;
+}
+
+.gradient-button {
+  position: relative;
+  color: $white;
+  text-align: center;
+  min-width: 50%;
+  // max-width: 90%;
+
+  transition: transform 0.1s ease-in;
+
+  @include large {
+    max-width: 75%;
+  }
+
+  @include extra-large {
+    max-width: 50%;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+
+    &::before {
+      box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $gradient-half;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.25);
+    transform: skew(-30deg);
+    transition: box-shadow 0.1s ease-in;
+
+    // padding: 0 1rem;
+    z-index: -1;
+  }
 }

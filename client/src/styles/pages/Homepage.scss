@@ -1,5 +1,3 @@
-@import "../base";
-
 /* Homepage */
 
 section.homepage-cases {
@@ -33,24 +31,6 @@ section.homepage-cases {
   transition: 0.2s -webkit-transform ease-in-out;
   transition: 0.2s transform ease-in-out;
   transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
-}
-
-.case-1 {
-  background-image: url(../../assets/images/projects/svalegaarden/svalegaarden-all-devices.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.case-2 {
-  background-image: url(../../assets/images/projects/diabetes/diabetes-presentation-mockup.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.case-3 {
-  background-image: url(../../assets/images/projects/ungdomsringens/ungdomsringens-all-devices.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

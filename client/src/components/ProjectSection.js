@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../styles/components/ProjectSection.scss";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const ProjectSection = (props) => {
   const project = props.project;
 
   const projectImagesPath = "assets/images/projects/";
   return (
-    <React.Fragment>
-      {props.alignment == "left" ? (
+    <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+      {props.alignment === "left" ? (
         <section className="padding-x-large padding-y-medium flex projects cases show-on-scroll">
           <div className="cases-image">
             <Link to={`projects/${project.projectPath}`}>
@@ -17,20 +17,35 @@ const ProjectSection = (props) => {
             </Link>
           </div>
           <div className="cases-info">
-            <h1>{project.name}</h1>
+            <h2>{project.name}</h2>
             <h4 className="subtitle">{project.subtitle}</h4>
+            <p>
+              {project.technologies.map((tech, index) => {
+                return (
+                  <React.Fragment key={index}>
+                    <strong>
+                      {"#"}
+                      {`${tech}, `}
+                    </strong>
+                  </React.Fragment>
+                );
+              })}
+            </p>
             <h6 className="text-dark">My roles:</h6>
             <ul className="text-dark">
-              {project.roles.map((role) => {
+              {project.roles.map((role, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <p>{role}</p>
                   </li>
                 );
               })}
             </ul>
-            <Link to={`projects/${project.projectPath}`}>
-              <h4 className="padding-y-extra-small gradient-underline-hover">
+            <Link
+              className="gradient-button"
+              to={`projects/${project.projectPath}`}
+            >
+              <h4 className="">
                 view project <i className="fas fa-long-arrow-alt-right"></i>
               </h4>
             </Link>
@@ -39,8 +54,20 @@ const ProjectSection = (props) => {
       ) : (
         <section className="padding-x-large padding-y-medium flex projects cases show-on-scroll">
           <div className="cases-info">
-            <h1>{project.name}</h1>
+            <h2>{project.name}</h2>
             <h4 className="subtitle">{project.subtitle}</h4>
+            <p>
+              {project.technologies.map((tech) => {
+                return (
+                  <React.Fragment>
+                    <strong>
+                      {"#"}
+                      {`${tech}, `}
+                    </strong>
+                  </React.Fragment>
+                );
+              })}
+            </p>
             <h6 className="text-dark">My roles:</h6>
             <ul className="text-dark">
               {project.roles.map((role) => {
@@ -51,8 +78,11 @@ const ProjectSection = (props) => {
                 );
               })}
             </ul>
-            <Link to={`projects/${project.projectPath}`}>
-              <h4 className="padding-y-extra-small gradient-underline-hover">
+            <Link
+              className="gradient-button"
+              to={`projects/${project.projectPath}`}
+            >
+              <h4 className="">
                 view project <i className="fas fa-long-arrow-alt-right"></i>
               </h4>
             </Link>
@@ -69,7 +99,7 @@ const ProjectSection = (props) => {
           </div>
         </section>
       )}
-    </React.Fragment>
+    </ScrollAnimation>
   );
 };
 

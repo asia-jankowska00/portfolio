@@ -1,7 +1,3 @@
-@import "base";
-
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Nunito:400,900&display=swap");
-
 /* Global */
 
 * {
@@ -56,6 +52,16 @@ p {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {

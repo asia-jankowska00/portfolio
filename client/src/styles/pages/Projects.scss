@@ -1,5 +1,3 @@
-@import "../base";
-
 /* Cases */
 
 section.cases {
@@ -85,7 +83,7 @@ section.projects .cases-image img:hover {
     word-wrap: break-word;
   }
 
-  .cases-info a h4 {
+  .cases-info {
     margin-bottom: 20vw;
   }
 
@@ -123,7 +121,7 @@ section.projects .cases-image img:hover {
     width: 100%;
   }
 
-  .cases-info a h4 {
+  .cases-info {
     margin-bottom: 20vw;
   }
 
@@ -147,7 +145,11 @@ section.projects .cases-image img:hover {
 @include large {
   .case-view-buttons {
     justify-content: space-between;
-    width: 60%;
+    width: 100%;
+
+    .gradient-button {
+      margin-right: 4vw;
+    }
   }
 
   .diabetes-img {
@@ -159,7 +161,11 @@ section.projects .cases-image img:hover {
   .case-view-buttons {
     -webkit-box-pack: justify;
     justify-content: space-between;
-    width: 60%;
+    width: 75%;
+
+    .gradient-button {
+      margin-right: 4vw;
+    }
   }
 
   .diabetes-img {

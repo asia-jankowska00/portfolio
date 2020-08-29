@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ProjectsContext } from "../ProjectsContext";
 import Layout from "../components/Layout";
 
-import "../styles/pages/ProjectPage.scss";
+// import "../styles/pages/ProjectPage.scss";
 
 const ProjectPage = (props) => {
   const data = useContext(ProjectsContext);
@@ -18,11 +18,11 @@ const ProjectPage = (props) => {
   })[0];
 
   return (
-    <Layout>
+    <Layout textToType="< Projects />">
       <section className="padding-x-large padding-y-extra-small cases show-on-scroll">
         <Link to="/projects">
           <h4 className="subtitle">
-            <i className="fas fa-long-arrow-alt-left"></i> Back to cases
+            <i className="fas fa-long-arrow-alt-left"></i> Back to projects
           </h4>
         </Link>
         <h1 className="text-center">{currentProject.name}</h1>
@@ -35,11 +35,22 @@ const ProjectPage = (props) => {
           <p className="text-dark">{currentProject.longDescriptionFP}</p>
           <p className="text-dark">{currentProject.longDescriptionSP}</p>
 
+          <p>
+            {currentProject.technologies.map((tech, index) => {
+              return (
+                <React.Fragment key={index}>
+                  {"#"}
+                  <strong>{`${tech}, `}</strong>
+                </React.Fragment>
+              );
+            })}
+          </p>
+
           <h6 className="text-dark">My roles:</h6>
           <ul className="text-dark">
-            {currentProject.roles.map((role) => {
+            {currentProject.roles.map((role, index) => {
               return (
-                <li>
+                <li key={index}>
                   <p>{role}</p>
                 </li>
               );
@@ -55,13 +66,13 @@ const ProjectPage = (props) => {
       </section>
 
       <div className="case-view-buttons padding-x-large padding-y-small flex text-dark show-on-scroll">
-        <a href="https://github.com/joanna-00/ccw-website/tree/version2">
-          <h4 className="padding-y-extra-small gradient-underline-hover">
+        <a href={currentProject.linkGithub} className="gradient-button mb-4">
+          <h4>
             View on GitHub <i className="fa fa-github" aria-hidden="true"></i>
           </h4>
         </a>
-        <a href="http://des-iis.ucn.dk/mmdi0919/1081578/sem2/mmd2/version2/index.html">
-          <h4 className="padding-y-extra-small gradient-underline-hover">
+        <a href={currentProject.linkLive} className="gradient-button  mb-4">
+          <h4>
             View live <i className="fas fa-long-arrow-alt-right"></i>
           </h4>
         </a>
@@ -72,7 +83,7 @@ const ProjectPage = (props) => {
       <section className="padding-x-large padding-y-medium flex cases show-on-scroll">
         <div className="cases-image">
           <img
-            src={`${projectImagesPath}${currentProject.sectionThreeImage}`}
+            src={`${projectImagesPath}${currentProject.sectionOneImage}`}
             alt=""
           />
         </div>

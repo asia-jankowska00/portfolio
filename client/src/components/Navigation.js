@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
 // import { withRouter } from "react-router";
 
-import "../styles/components/Navigation.scss";
+// import "../styles/components/Navigation.scss";
 
 const Navigation = (props) => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -28,20 +28,16 @@ const Navigation = (props) => {
     if (props.match.path === "/") {
       if (scrollPosition > viewportHeight * 0.9) {
         _setInvertNav(true);
+        setIsFullNav(true);
       } else {
         _setInvertNav(false);
-      }
-      if (scrollPosition > viewportHeight) {
-        setIsFullNav(true);
       }
     } else {
-      if (scrollPosition > viewportHeight * 0.1) {
+      if (scrollPosition > viewportHeight * 0.15) {
         _setInvertNav(true);
+        setIsFullNav(true);
       } else {
         _setInvertNav(false);
-      }
-      if (scrollPosition > viewportHeight * 0.4) {
-        setIsFullNav(true);
       }
     }
   };
@@ -62,7 +58,6 @@ const Navigation = (props) => {
   return (
     <React.Fragment>
       <nav
-        // ref={myStateRef}
         className={`nav-desktop show-on-scroll ${invertNav ? "invert" : ""} ${
           isFullNav ? "width-100" : ""
         }`}
@@ -103,6 +98,18 @@ const Navigation = (props) => {
           >
             <Link to="/story">story</Link>
           </li>
+
+          <li>
+            <a href="https://github.com/asia-jankowska00/">
+              <i className="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joannajankowska00/">
+              <i className="fab fa-linkedin"></i>
+            </a>
+          </li>
+          {/* <li>
+        
+          </li> */}
         </ul>
       </nav>
 

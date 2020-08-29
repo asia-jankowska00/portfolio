@@ -1,11 +1,9 @@
-@import "../base";
-
 /* Footer */
 
 footer {
   background-color: $grey-6;
   text-align: center;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 footer .flex {
@@ -38,6 +36,10 @@ footer h6 {
 
 footer h5 {
   margin: 2rem 0;
+}
+
+footer .fa-github {
+  margin-right: 1vw;
 }
 
 footer .fa-linkedin,
