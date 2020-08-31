@@ -14,6 +14,7 @@ import ProjectPage from "./pages/ProjectPage";
 import "./styles/main.scss";
 
 function App() {
+  //
   return (
     <ProjectsContextProvider>
       <Router basename={process.env.PUBLIC_URL}>
