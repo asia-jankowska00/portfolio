@@ -1,0 +1,130 @@
+/* Background */
+
+section:nth-of-type(2n),
+section.blurb,
+section.homepage-cases {
+  position: relative;
+}
+
+section {
+  &:nth-of-type(2n)::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    z-index: -9999;
+    top: -10%;
+    left: 0;
+    background-image: url(../../assets/images/svg/polygon-bg-sharp.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: visible;
+  }
+}
+
+div:nth-of-type(2n) section {
+  position: relative;
+}
+
+div:nth-of-type(2n) section:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  z-index: -9999;
+  top: -10%;
+  left: 0;
+  background-image: url(../../assets/images/svg/polygon-bg-sharp.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: visible;
+}
+
+section.blurb::after,
+section.homepage-cases::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  z-index: -9999;
+  top: 20%;
+  left: 0;
+  background-image: url(../../assets/images/svg/polygon-bg-sharp.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: visible;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/images/hero-image-2k.jpg);
+  background-size: cover;
+  background-position: right bottom;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.divider {
+  background: $gradient-half;
+  margin: 0 auto;
+  height: 4px;
+  width: 30vw;
+}
+
+@include small {
+  section:nth-of-type(2n)::after {
+    background-image: url(../../assets/images/svg/polygon-bg-sharp-half.png);
+  }
+
+  section.blurb:after,
+  section.homepage-cases::after {
+    background-image: url(../../assets/images/svg/polygon-bg-sharp-half.png);
+  }
+
+  .hero-image {
+    background-image: url(../../assets/images/hero-image-1k.jpg);
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
+@include medium {
+  section:nth-of-type(2n)::after {
+    background-image: url(../../assets/images/svg/polygon-bg-sharp-half.png);
+  }
+
+  section.blurb:after,
+  section.homepage-cases::after {
+    background-image: url(../../assets/images/svg/polygon-bg-sharp-half.png);
+  }
+
+  .hero-image {
+    background-image: url(../../assets/images/hero-image-1k.jpg);
+    background-size: cover;
+    background-position: center bottom;
+  }
+}
+
+@include large {
+  .bg-svg {
+    width: 100%;
+    /* height: 60vh; */
+  }
+}
+
+@include extra-large {
+  .bg-svg {
+    margin-top: 45vh;
+    width: 100vw;
+  }
+
+  .margin-first {
+    margin-top: 70vh;
+  }
+}

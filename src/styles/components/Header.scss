@@ -1,0 +1,106 @@
+/* Header */
+
+header {
+  height: 14vw;
+  position: relative;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.header-svg {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  bottom: -1px;
+}
+
+header .header-title {
+  position: absolute;
+  margin: 0;
+  /* padding: 4vw; */
+}
+
+header.header-homepage {
+  z-index: -1;
+  height: 100vh;
+}
+
+header.header-homepage > div {
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+header.header-homepage .hero-image {
+  z-index: 1;
+}
+
+header.header > div {
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0% 100%);
+}
+
+/* .txt-type:after {
+    content: "";
+    border-right: 1px white solid;
+  } */
+
+@include small {
+  header {
+    height: 25vw;
+  }
+
+  header.header-homepage h3.header-title {
+    top: 30%;
+    left: 10%;
+  }
+
+  header.header-homepage h1.header-title {
+    top: 40%;
+    left: 10%;
+  }
+}
+
+@include medium {
+  header {
+    height: 25vw;
+  }
+
+  header.header-homepage h3.header-title {
+    top: 30%;
+    left: 10%;
+  }
+
+  header.header-homepage h1.header-title {
+    top: 40%;
+    left: 10%;
+  }
+}
+
+@include large {
+  header.header-homepage h3.header-title {
+    top: 30%;
+    left: 45%;
+  }
+
+  header.header-homepage h1.header-title {
+    top: 40%;
+    left: 45%;
+    padding-right: 4rem;
+  }
+}
+
+@include extra-large {
+  header.header-homepage h3.header-title {
+    top: 30%;
+    left: 50%;
+  }
+
+  header.header-homepage h1.header-title {
+    top: 40%;
+    left: 50%;
+    padding-right: 4rem;
+  }
+}

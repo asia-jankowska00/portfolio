@@ -1,0 +1,142 @@
+/* Global */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-primary;
+  // scroll-behavior: smooth;
+  cursor: url(../assets/images/black-cursor.png), default;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $grey-2;
+  color: $grey-6;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: $font-3xl;
+  margin: 1rem 0;
+}
+h2 {
+  font-size: $font-2xl;
+  margin: 1rem 0;
+}
+h3 {
+  font-size: $font-xl;
+  margin: 0.8rem 0;
+}
+h4 {
+  font-size: $font-lg;
+  margin: 0.6rem 0;
+}
+h5 {
+  font-size: $font-md;
+  margin: 0.5rem 0;
+}
+h6 {
+  font-size: $font-sm;
+  margin: 0.4rem 0;
+}
+
+p {
+  font-size: $font-sm;
+  font-family: $font-secondary;
+  margin: 0.4rem 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $grey-2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#6b2aa6),
+    color-stop(#543da6),
+    color-stop(#4a6acb),
+    to(#42c5cd)
+  );
+  background: linear-gradient(180deg, #6b2aa6, #543da6, #4a6acb, #42c5cd);
+}
+
+@include small {
+  html {
+    font-size: 4.2vw;
+  }
+
+  .hide-small {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+}
+
+@include medium {
+  html {
+    font-size: 2.8vw;
+  }
+
+  .hide-medium {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+}
+
+@include large {
+  html {
+    font-size: 1.8vw;
+  }
+
+  .hide-large {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+}
+
+@include extra-large {
+  html {
+    font-size: 1.2vw;
+  }
+
+  .hide-extra-large {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+}

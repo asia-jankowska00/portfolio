@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Nunito:400,900&display=swap");
+
+@import "variables";
+@import "mixins";
+@import "animations";
+@import "utilities";
+
+@import "global";
+
+@import "./pages/Homepage.scss";
+@import "./pages/ProjectPage.scss";
+@import "./pages/Projects.scss";
+@import "./pages/Skills.scss";
+@import "./pages/Story.scss";
+@import "./pages/Values.scss";
+
+@import "./components/Background.scss";
+@import "./components/Footer.scss";
+@import "./components/Gradient.scss";
+@import "./components/Header.scss";
+@import "./components/Navigation.scss";
+@import "./components/ProjectSection.scss";

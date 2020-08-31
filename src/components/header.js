@@ -1,42 +1,33 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from "react";
+import Navigation from "./Navigation";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import Typewriter from "typewriter-effect";
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const Header = (props) => {
+  return (
+    <header className="header">
+      <Navigation></Navigation>
+      <div className="text-light gradient-half-background">
+        <div className="hero-image"></div>
+        {/* <img
+          className="header-svg"
+          src="../assets/images/svg/polygon-header.svg"
+          alt=""
+        /> */}
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+        <h2 className="txt-type header-title padding-x-large padding-y-small">
+          <Typewriter
+            options={{
+              cursor: "",
+            }}
+            onInit={(typewriter) => {
+              typewriter.start().changeDelay(35).typeString(props.textToType);
+            }}
+          />
+        </h2>
+      </div>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
