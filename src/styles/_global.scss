@@ -7,7 +7,7 @@
 html {
   font-family: $font-primary;
   // scroll-behavior: smooth;
-  cursor: url(../assets/images/black-cursor.png), default;
+  cursor: $cursor;
 }
 
 body {

@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from "react";
-import { Link, withRouter } from "react-router-dom";
+import React, { useState, useEffect } from "react"
+import { Link } from "gatsby"
 // import { withRouter } from "react-router";
 
 // import "../styles/components/Navigation.scss";
 
-const Navigation = (props) => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [viewportHeight, setViewportHeight] = useState(0);
-  const [invertNav, _setInvertNav] = useState(false);
-  const [isFullNav, setIsFullNav] = useState(false);
+const Navigation = props => {
+  const [scrollPosition, setScrollPosition] = useState(0)
+  const [viewportHeight, setViewportHeight] = useState(0)
+  const [invertNav, _setInvertNav] = useState(false)
+  const [isFullNav, setIsFullNav] = useState(false)
+
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
   // console.log(props.match);
 
@@ -23,37 +25,37 @@ const Navigation = (props) => {
   // };
 
   const navScrollHandler = () => {
-    setScrollPosition(window.pageYOffset);
+    setScrollPosition(window.pageYOffset)
 
-    if (props.match.path === "/") {
+    if (window.location.pathname === "/") {
       if (scrollPosition > viewportHeight * 0.9) {
-        _setInvertNav(true);
-        setIsFullNav(true);
+        _setInvertNav(true)
+        setIsFullNav(true)
       } else {
-        _setInvertNav(false);
+        _setInvertNav(false)
       }
     } else {
       if (scrollPosition > viewportHeight * 0.15) {
-        _setInvertNav(true);
-        setIsFullNav(true);
+        _setInvertNav(true)
+        setIsFullNav(true)
       } else {
-        _setInvertNav(false);
+        _setInvertNav(false)
       }
     }
-  };
+  }
 
   useEffect(() => {
-    let isMounted = true;
+    let isMounted = true
     if (isMounted) {
-      setViewportHeight(window.innerHeight);
+      setViewportHeight(window.innerHeight)
 
-      window.addEventListener("scroll", navScrollHandler);
+      window.addEventListener("scroll", navScrollHandler)
     }
     return () => {
-      isMounted = false;
-      window.removeEventListener("scroll", navScrollHandler);
-    };
-  });
+      isMounted = false
+      window.removeEventListener("scroll", navScrollHandler)
+    }
+  })
 
   return (
     <React.Fragment>
@@ -113,14 +115,23 @@ const Navigation = (props) => {
         </ul>
       </nav>
 
-      <nav className="nav-mobile show-on-scroll pointer-events-none">
+      <nav
+        className={`nav-mobile show-on-scroll ${
+          isMobileNavOpen ? "" : "pointer-events-none"
+        } ${invertNav ? "invert" : ""}`}
+      >
         <h2 className="margin-0">
           <i
-            className="fas fa-bars pointer-events-initial"
+            onClick={() => {
+              setIsMobileNavOpen(!isMobileNavOpen)
+            }}
+            className={`fas ${
+              isMobileNavOpen ? "fa-times" : "fa-bars"
+            } pointer-events-initial`}
             id="menuHamburger"
           ></i>
         </h2>
-        <ul className="hidden" id="menuUl">
+        <ul className={isMobileNavOpen ? " " : "hidden"} id="menuUl">
           <li className="gradient-half-background">
             <Link to="/">home</Link>
           </li>
@@ -139,7 +150,7 @@ const Navigation = (props) => {
         </ul>
       </nav>
     </React.Fragment>
-  );
-};
+  )
+}
 
-export default withRouter(Navigation);
+export default Navigation

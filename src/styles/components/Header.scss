@@ -61,6 +61,11 @@ header.header > div {
     top: 40%;
     left: 10%;
   }
+
+  header.header > div {
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+  }
 }
 
 @include medium {
@@ -76,6 +81,11 @@ header.header > div {
   header.header-homepage h1.header-title {
     top: 40%;
     left: 10%;
+  }
+
+  header.header > div {
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
   }
 }
 

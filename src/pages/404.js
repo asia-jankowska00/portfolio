@@ -1,14 +1,20 @@
 import React from "react"
+import Layout from "../components/Layout"
+import ScrollAnimation from "react-animate-on-scroll"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import "../styles/main.scss"
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+const NotFoundPage = () => {
+  return (
+    <Layout textToType="< Story />">
+      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+        <section className="padding-x-large padding-y-small flex flex-column show-on-scroll">
+          <h1 className="text-center">Oops, there is nothing here...</h1>
+          <h2 className="text-center  text-huge subtitle"> 404 </h2>
+        </section>
+      </ScrollAnimation>
+    </Layout>
+  )
+}
 
 export default NotFoundPage

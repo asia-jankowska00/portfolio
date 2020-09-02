@@ -28,6 +28,10 @@
   font-weight: 900;
 }
 
+.text-huge {
+  font-size: 12vw;
+}
+
 strong {
   font-weight: 900;
 }
@@ -41,9 +45,17 @@ strong {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .display-none {
   /* transform: translateX(-100%) !important */
   display: none;
+}
+
+.display-block {
+  display: block;
 }
 
 .padding-x-extra-small {

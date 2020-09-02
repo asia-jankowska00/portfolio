@@ -12,7 +12,7 @@ const ProjectSection = props => {
       {props.alignment === "left" ? (
         <section className="padding-x-large padding-y-medium flex projects cases show-on-scroll">
           <div className="cases-image">
-            <Link to={`projects/${project.projectPath}`}>
+            <Link to={`/projects/${project.projectPath}`}>
               {/* <img src={`${projectImagesPath}${project.displayImage}`} alt="" /> */}
             </Link>
           </div>
@@ -43,7 +43,7 @@ const ProjectSection = props => {
             </ul>
             <Link
               className="gradient-button"
-              to={`projects/${project.projectPath}`}
+              to={`/projects/${project.projectPath}`}
             >
               <h4 className="">
                 view project <i className="fas fa-long-arrow-alt-right"></i>
@@ -80,7 +80,7 @@ const ProjectSection = props => {
             </ul>
             <Link
               className="gradient-button"
-              to={`projects/${project.projectPath}`}
+              to={`/projects/${project.projectPath}`}
             >
               <h4 className="">
                 view project <i className="fas fa-long-arrow-alt-right"></i>
@@ -88,7 +88,7 @@ const ProjectSection = props => {
             </Link>
           </div>
           <div className="cases-image">
-            <Link to={`projects/${project.projectPath}`}>
+            <Link to={`/projects/${project.projectPath}`}>
               {/* {project.displayImage ? (
                 <img
                   src={`${projectImagesPath}${project.displayImage}`}

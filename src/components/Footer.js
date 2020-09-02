@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "gatsby"
 // import "../styles/components/Footer.scss";
 
-import ScrollAnimation from "react-animate-on-scroll";
+import ScrollAnimation from "react-animate-on-scroll"
 
-const Footer = (props) => {
+const Footer = props => {
   return (
     <footer className="text-light">
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
@@ -29,7 +29,7 @@ const Footer = (props) => {
             <h6 className="text-thin back-to-top">
               <button
                 onClick={() => {
-                  window.scrollTo(0, 0);
+                  window.scrollTo(0, 0)
                 }}
                 className="white-underline-hover padding-y-extra-small"
               >
@@ -42,7 +42,7 @@ const Footer = (props) => {
       </ScrollAnimation>
       <div className="footer-gradient gradient-half-background"></div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

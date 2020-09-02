@@ -1,21 +1,23 @@
 import React, { useEffect } from "react"
-import { useLocation } from "react-router-dom"
+// import { useLocation } from "react-router-dom"
 import Footer from "./Footer"
 import Header from "./Header"
 
-const Layout = props => {
-  const location = useLocation()
+import ProjectsContextProvider from "../ProjectsContext"
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [location])
+const Layout = props => {
+  // const location = useLocation()
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [location])
 
   return (
-    <React.Fragment>
+    <ProjectsContextProvider>
       <Header textToType={props.textToType}></Header>
       {props.children}
       <Footer></Footer>
-    </React.Fragment>
+    </ProjectsContextProvider>
   )
 }
 

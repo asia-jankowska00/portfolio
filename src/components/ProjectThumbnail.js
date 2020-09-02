@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "gatsby"
 
-const ProjectThumbnail = (props) => {
-  const project = props.project;
+const ProjectThumbnail = props => {
+  const project = props.project
   return (
     <div
       className={`case `}
@@ -19,7 +19,7 @@ const ProjectThumbnail = (props) => {
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProjectThumbnail;
+export default ProjectThumbnail

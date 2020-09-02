@@ -1,9 +1,16 @@
-import React from "react";
-import Navigation from "./Navigation";
+import React, { useEffect, useState } from "react"
+import Navigation from "./Navigation"
 
-import Typewriter from "typewriter-effect";
+import Typewriter from "typewriter-effect"
 
-const Header = (props) => {
+const Header = props => {
+  const [isHomepage, setIsHomepage] = useState(false)
+
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+    }
+  }, [])
+
   return (
     <header className="header">
       <Navigation></Navigation>
@@ -20,14 +27,14 @@ const Header = (props) => {
             options={{
               cursor: "",
             }}
-            onInit={(typewriter) => {
-              typewriter.start().changeDelay(35).typeString(props.textToType);
+            onInit={typewriter => {
+              typewriter.start().changeDelay(35).typeString(props.textToType)
             }}
           />
         </h2>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
