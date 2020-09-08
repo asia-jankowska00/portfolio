@@ -11,7 +11,7 @@ const Projects = props => {
   const projects = data.projects
 
   return (
-    <Layout textToType="< Projects />">
+    <Layout title="Projects" textToType="< Projects />">
       {projects.map((project, index) => {
         if (index % 2 === 0) {
           return (

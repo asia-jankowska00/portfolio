@@ -6,7 +6,7 @@ import "../styles/main.scss"
 
 const NotFoundPage = () => {
   return (
-    <Layout textToType="< Story />">
+    <Layout title="404">
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <section className="padding-x-large padding-y-small flex flex-column show-on-scroll">
           <h1 className="text-center">Oops, there is nothing here...</h1>

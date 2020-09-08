@@ -42,21 +42,20 @@ div:nth-of-type(2n) section:after {
   overflow: visible;
 }
 
-section.blurb::after,
-section.homepage-cases::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 70%;
-  z-index: -9999;
-  top: 20%;
-  left: 0;
-  background-image: $polygon-bg-sharp;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: visible;
-}
+// section.blurb::after {
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   height: 70%;
+//   z-index: -9999;
+//   top: 20%;
+//   left: 0;
+//   background-image: $polygon-bg-sharp;
+//   background-size: 100% 100%;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   overflow: visible;
+// }
 
 .hero-image {
   position: absolute;
@@ -65,7 +64,7 @@ section.homepage-cases::after {
   height: 100vh;
   background-image: $hero-image-2k;
   background-size: cover;
-  background-position: right bottom;
+  background-position: right center;
   opacity: 0.2;
   pointer-events: none;
 }
@@ -90,7 +89,7 @@ section.homepage-cases::after {
   .hero-image {
     background-image: $hero-image-1k;
     background-size: cover;
-    background-position: center top;
+    background-position: left center;
   }
 }
 
@@ -107,7 +106,7 @@ section.homepage-cases::after {
   .hero-image {
     background-image: $hero-image-1k;
     background-size: cover;
-    background-position: center bottom;
+    background-position: left center;
   }
 }
 

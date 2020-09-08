@@ -9,11 +9,29 @@ section.homepage-cases {
 .homepage-cases > a {
   align-self: center;
   justify-self: center;
+  min-width: 30%;
+
+  @include medium {
+    min-width: 60%;
+  }
+
+  @include small {
+    min-width: 75%;
+  }
 }
 
-.homepage-cases > a > h4 {
+.homepage-cases > a {
   display: inline-block;
+
   margin-bottom: 5vw;
+}
+
+.homepage-cases .subtitle {
+  margin-bottom: 5vw;
+
+  @include small {
+    margin-bottom: 5vw;
+  }
 }
 
 .cases-showcase {

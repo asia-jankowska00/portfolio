@@ -3,22 +3,67 @@ import Navigation from "./Navigation"
 
 import Typewriter from "typewriter-effect"
 
+import ScrollAnimation from "react-animate-on-scroll"
+
 const Header = props => {
   const [isHomepage, setIsHomepage] = useState(false)
 
   useEffect(() => {
     if (window.location.pathname === "/") {
+      setIsHomepage(true)
     }
   }, [])
 
-  return (
+  return isHomepage && window.location ? (
+    <header className="header-homepage">
+      <Navigation></Navigation>
+      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+        <div className="text-light gradient-half-background">
+          <div className="hero-image"></div>
+          <h3 className="txt-type header-title">
+            <Typewriter
+              options={{
+                cursor: "",
+              }}
+              onInit={typewriter => {
+                typewriter
+                  .start()
+                  .changeDelay(35)
+                  .typeString("< hello world /> <br>")
+              }}
+            />
+          </h3>
+
+          <h1 className="txt-type header-title">
+            <Typewriter
+              options={{
+                cursor: "",
+              }}
+              onInit={typewriter => {
+                typewriter
+                  .start()
+                  .changeDelay(35)
+                  // .typeString("< hello world /> <br>")
+                  .pauseFor(1000)
+                  // .deleteAll()
+                  .typeString(
+                    "< I'm Joanna, <br> front-end developer and designer />"
+                  )
+              }}
+            />
+          </h1>
+        </div>
+      </ScrollAnimation>
+    </header>
+  ) : window.location ? (
     <header className="header">
       <Navigation></Navigation>
+      {/* <ScrollAnimation animateIn="fadeIn" animateOnce={true}> */}
       <div className="text-light gradient-half-background">
         <div className="hero-image"></div>
         {/* <img
           className="header-svg"
-          src="../assets/images/svg/polygon-header.svg"
+          src="../images/svg/polygon-header.svg"
           alt=""
         /> */}
 
@@ -33,8 +78,9 @@ const Header = props => {
           />
         </h2>
       </div>
+      {/* </ScrollAnimation> */}
     </header>
-  )
+  ) : null
 }
 
 export default Header

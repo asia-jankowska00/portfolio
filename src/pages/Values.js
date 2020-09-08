@@ -6,7 +6,7 @@ import "../styles/main.scss"
 
 const Values = () => {
   return (
-    <Layout textToType="< Values />">
+    <Layout title="Values" textToType="< Values />">
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <section className="padding-x-large padding-y-small flex values show-on-scroll">
           <div className="values-icons">

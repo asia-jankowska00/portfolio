@@ -6,14 +6,14 @@ import ScrollAnimation from "react-animate-on-scroll"
 const ProjectSection = props => {
   const project = props.project
 
-  const projectImagesPath = "assets/images/projects/"
+  const projectImagesPath = "../images/projects/"
   return (
     <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
       {props.alignment === "left" ? (
         <section className="padding-x-large padding-y-medium flex projects cases show-on-scroll">
           <div className="cases-image">
             <Link to={`/projects/${project.projectPath}`}>
-              {/* <img src={`${projectImagesPath}${project.displayImage}`} alt="" /> */}
+              <img src={`${projectImagesPath}${project.displayImage}`} alt="" />
             </Link>
           </div>
           <div className="cases-info">
@@ -23,10 +23,8 @@ const ProjectSection = props => {
               {project.technologies.map((tech, index) => {
                 return (
                   <React.Fragment key={index}>
-                    <strong>
-                      {"#"}
-                      {`${tech}, `}
-                    </strong>
+                    {"#"}
+                    <strong>{`${tech}, `}</strong>
                   </React.Fragment>
                 )
               })}
@@ -89,12 +87,12 @@ const ProjectSection = props => {
           </div>
           <div className="cases-image">
             <Link to={`/projects/${project.projectPath}`}>
-              {/* {project.displayImage ? (
+              {project.displayImage ? (
                 <img
                   src={`${projectImagesPath}${project.displayImage}`}
                   alt=""
                 />
-              ) : null} */}
+              ) : null}
             </Link>
           </div>
         </section>

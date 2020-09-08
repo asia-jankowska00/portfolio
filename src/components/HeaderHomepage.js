@@ -7,12 +7,6 @@ const HeaderHomepage = () => {
     <header className="header-homepage show-on-scroll">
       <div className="hero-image"></div>
       <div className="text-light gradient-half-background">
-        {/* <img
-          className="header-svg"
-          src="assets/images/svg/polygon-header.svg"
-          alt=""
-        /> */}
-
         <h3 className="txt-type header-title">
           <Typewriter
             options={{

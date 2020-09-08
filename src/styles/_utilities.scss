@@ -76,6 +76,11 @@ strong {
 .padding-x-large {
   padding-left: 8vw;
   padding-right: 8vw;
+
+  @include extra-large {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
 }
 
 .padding-y-extra-small {
@@ -124,7 +129,7 @@ strong {
 
 .subtitle {
   font-weight: 400;
-  color: $grey-4;
+  color: $grey-5;
 }
 
 .width-25 {

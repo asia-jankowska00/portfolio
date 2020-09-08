@@ -7,7 +7,7 @@ $grey-1: #fdfdff;
 $grey-2: #f7f8fb;
 $grey-3: #e5e7ec;
 $grey-4: #bfc2ca;
-$grey-5: #777a82;
+$grey-5: #8a8d94;
 $grey-6: #282b31;
 $grey-7: #0f1014;
 $gradient: linear-gradient(
@@ -37,18 +37,12 @@ $font-3xl: 2.2rem;
 
 // Images
 
-$CV-photo-bw-400: none;
-//  url(../../assets/images/CV-photo-bw-400.png);
-$CV-photo-bw-200: none;
-//  url(../../assets/images/CV-photo-bw-200.png);
-$polygon-bg-sharp: none;
-//  url(../../assets/images/svg/polygon-bg-sharp.png);
-$polygon-bg-sharp-half: none;
-//  url(../../assets/images/svg/polygon-bg-sharp-half.png);
-$hero-image-2k: none;
-//  url(../../assets/images/hero-image-2k.jpg);
-$hero-image-1k: none;
-//  url(../../assets/images/hero-image-1k.jpg);
+$CV-photo-bw-400: url(../../static/images/CV-photo-bw-400.png);
+$CV-photo-bw-200: url(../../static/images/CV-photo-bw-200.png);
+$polygon-bg-sharp: url(../../static/images/svg/polygon-bg-sharp.png);
+$polygon-bg-sharp-half: url(../../static/images/svg/polygon-bg-sharp-half.png);
+$hero-image-2k: url(../../static/images/hero-image-2k.jpg);
+$hero-image-1k: url(../../static/images/hero-image-1k.jpg);
 
+// $cursor: url(../static/images/black-cursor.png), default;
 $cursor: default;
-//  url(../assets/images/black-cursor.png), default;

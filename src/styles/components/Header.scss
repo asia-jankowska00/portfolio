@@ -7,15 +7,15 @@ header {
   overflow: hidden;
 }
 
-.header-svg {
-  pointer-events: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  bottom: -1px;
-}
+// .header-svg {
+//   pointer-events: none;
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   position: absolute;
+//   bottom: -1px;
+// }
 
 header .header-title {
   position: absolute;
@@ -24,23 +24,28 @@ header .header-title {
 }
 
 header.header-homepage {
-  z-index: -1;
   height: 100vh;
 }
 
-header.header-homepage > div {
-  height: 100%;
+header.header-homepage > div > div {
+  height: 100vh;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
 header.header-homepage .hero-image {
   z-index: 1;
+  height: 100%;
 }
 
 header.header > div {
   height: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 30%, 0% 100%);
 }
+
+// header.header > div  {
+//   // height: 100%;
+//   clip-path: polygon(0 0, 100% 0, 100% 30%, 0% 100%);
+// }
 
 /* .txt-type:after {
     content: "";
@@ -63,8 +68,12 @@ header.header > div {
   }
 
   header.header > div {
+    // height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+  }
+
+  header.header .hero-image {
     height: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
   }
 }
 
@@ -86,6 +95,10 @@ header.header > div {
   header.header > div {
     height: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+  }
+
+  header.header .hero-image {
+    height: 100%;
   }
 }
 

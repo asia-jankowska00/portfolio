@@ -1,7 +1,8 @@
-import React, { useEffect } from "react"
+import React from "react"
 // import { useLocation } from "react-router-dom"
 import Footer from "./Footer"
 import Header from "./Header"
+import MyHelmet from "./MyHelmet"
 
 import ProjectsContextProvider from "../ProjectsContext"
 
@@ -14,6 +15,7 @@ const Layout = props => {
 
   return (
     <ProjectsContextProvider>
+      <MyHelmet title={props.title}></MyHelmet>
       <Header textToType={props.textToType}></Header>
       {props.children}
       <Footer></Footer>
