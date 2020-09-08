@@ -6,15 +6,16 @@ import Typewriter from "typewriter-effect"
 import ScrollAnimation from "react-animate-on-scroll"
 
 const Header = props => {
-  const [isHomepage, setIsHomepage] = useState(false)
+  const isHomepage = props.isHomepage
+  // const [isHomepage, setIsHomepage] = useState(false)
 
-  useEffect(() => {
-    if (window.location.pathname === "/") {
-      setIsHomepage(true)
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (window.location.pathname === "/") {
+  //     setIsHomepage(true)
+  //   }
+  // }, [])
 
-  return isHomepage && window.location ? (
+  return isHomepage ? (
     <header className="header-homepage">
       <Navigation></Navigation>
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
@@ -55,7 +56,7 @@ const Header = props => {
         </div>
       </ScrollAnimation>
     </header>
-  ) : window.location ? (
+  ) : (
     <header className="header">
       <Navigation></Navigation>
       {/* <ScrollAnimation animateIn="fadeIn" animateOnce={true}> */}
@@ -80,7 +81,7 @@ const Header = props => {
       </div>
       {/* </ScrollAnimation> */}
     </header>
-  ) : null
+  )
 }
 
 export default Header

@@ -12,6 +12,8 @@ const Navigation = props => {
 
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
+  const [windowExists, setWindowExists] = useState(false)
+
   // console.log(props.match);
 
   // const myStateRef = useRef();
@@ -45,17 +47,28 @@ const Navigation = props => {
   }
 
   useEffect(() => {
-    let isMounted = true
-    if (isMounted) {
-      setViewportHeight(window.innerHeight)
+    if (windowExists) {
+      let isMounted = true
+      if (isMounted) {
+        setViewportHeight(window.innerHeight)
 
-      window.addEventListener("scroll", navScrollHandler)
-    }
-    return () => {
-      isMounted = false
-      window.removeEventListener("scroll", navScrollHandler)
+        window.addEventListener("scroll", navScrollHandler)
+      }
+      return () => {
+        isMounted = false
+        if (windowExists) {
+          window.removeEventListener("scroll", navScrollHandler)
+        }
+      }
     }
   })
+
+  useEffect(() => {
+    if (typeof window !== `undefined` && !windowExists) {
+      setWindowExists(true)
+      console.log("window exists")
+    }
+  }, [])
 
   return (
     <React.Fragment>

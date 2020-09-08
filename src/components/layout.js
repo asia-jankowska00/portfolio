@@ -12,11 +12,11 @@ const Layout = props => {
   // useEffect(() => {
   //   window.scrollTo(0, 0)
   // }, [location])
-
+  const isHomepage = props.isHomepage
   return (
     <ProjectsContextProvider>
       <MyHelmet title={props.title}></MyHelmet>
-      <Header textToType={props.textToType}></Header>
+      <Header isHomepage={isHomepage} textToType={props.textToType}></Header>
       {props.children}
       <Footer></Footer>
     </ProjectsContextProvider>
