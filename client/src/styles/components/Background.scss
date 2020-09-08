@@ -15,7 +15,7 @@ section {
     z-index: -9999;
     top: -10%;
     left: 0;
-    background-image: url(../../assets/images/svg/polygon-bg-sharp.png);
+    background-image: $polygon-bg-sharp;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,7 +35,7 @@ div:nth-of-type(2n) section:after {
   z-index: -9999;
   top: -10%;
   left: 0;
-  background-image: url(../../assets/images/svg/polygon-bg-sharp.png);
+  background-image: $polygon-bg-sharp;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -51,7 +51,7 @@ section.homepage-cases::after {
   z-index: -9999;
   top: 20%;
   left: 0;
-  background-image: url(../../assets/images/svg/polygon-bg-sharp.png);
+  background-image: $polygon-bg-sharp;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -63,7 +63,7 @@ section.homepage-cases::after {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(../../assets/images/hero-image-2k.jpg);
+  background-image: $hero-image-2k;
   background-size: cover;
   background-position: right bottom;
   opacity: 0.2;
@@ -79,16 +79,16 @@ section.homepage-cases::after {
 
 @include small {
   section:nth-of-type(2n)::after {
-    background-image: url(../../assets/images/svg/polygon-bg-sharp-half.png);
+    background-image: $polygon-bg-sharp-half;
   }
 
   section.blurb:after,
   section.homepage-cases::after {
-    background-image: url(../../assets/images/svg/polygon-bg-sharp-half.png);
+    background-image: $polygon-bg-sharp-half;
   }
 
   .hero-image {
-    background-image: url(../../assets/images/hero-image-1k.jpg);
+    background-image: $hero-image-1k;
     background-size: cover;
     background-position: center top;
   }
@@ -96,16 +96,16 @@ section.homepage-cases::after {
 
 @include medium {
   section:nth-of-type(2n)::after {
-    background-image: url(../../assets/images/svg/polygon-bg-sharp-half.png);
+    background-image: $polygon-bg-sharp-half;
   }
 
   section.blurb:after,
   section.homepage-cases::after {
-    background-image: url(../../assets/images/svg/polygon-bg-sharp-half.png);
+    background-image: $polygon-bg-sharp-half;
   }
 
   .hero-image {
-    background-image: url(../../assets/images/hero-image-1k.jpg);
+    background-image: $hero-image-1k;
     background-size: cover;
     background-position: center bottom;
   }

@@ -10,6 +10,8 @@ const Navigation = (props) => {
   const [invertNav, _setInvertNav] = useState(false);
   const [isFullNav, setIsFullNav] = useState(false);
 
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
   // console.log(props.match);
 
   // const myStateRef = useRef();
@@ -113,14 +115,23 @@ const Navigation = (props) => {
         </ul>
       </nav>
 
-      <nav className="nav-mobile show-on-scroll pointer-events-none">
+      <nav
+        className={`nav-mobile show-on-scroll ${
+          isMobileNavOpen ? "" : "pointer-events-none"
+        } ${invertNav ? "invert" : ""}`}
+      >
         <h2 className="margin-0">
           <i
-            className="fas fa-bars pointer-events-initial"
+            onClick={() => {
+              setIsMobileNavOpen(!isMobileNavOpen);
+            }}
+            className={`fas ${
+              isMobileNavOpen ? "fa-times" : "fa-bars"
+            } pointer-events-initial`}
             id="menuHamburger"
           ></i>
         </h2>
-        <ul className="hidden" id="menuUl">
+        <ul className={isMobileNavOpen ? " " : "hidden"} id="menuUl">
           <li className="gradient-half-background">
             <Link to="/">home</Link>
           </li>

@@ -1,5 +1,7 @@
 /* Variables */
 
+// Colors
+
 $white: #ffffff;
 $grey-1: #fdfdff;
 $grey-2: #f7f8fb;
@@ -19,8 +21,12 @@ $gradient: linear-gradient(
   #6b2aa6
 );
 $gradient-half: linear-gradient(90deg, #6b2aa6, #543da6, #4a6acb, #42c5cd);
+
+// Typography
+
 $font-primary: Montserrat, "Segoe UI", sans-serif;
 $font-secondary: Nunito, "Segoe UI", sans-serif;
+
 $font-xs: 0.75rem;
 $font-sm: 0.875rem;
 $font-md: 1rem;
@@ -28,3 +34,12 @@ $font-lg: 1.25rem;
 $font-xl: 1.5rem;
 $font-2xl: 1.8rem;
 $font-3xl: 2.2rem;
+
+// Images
+
+$CV-photo-bw-400: url(../../assets/images/CV-photo-bw-400.png);
+$CV-photo-bw-200: url(../../assets/images/CV-photo-bw-200.png);
+$polygon-bg-sharp: url(../../assets/images/svg/polygon-bg-sharp.png);
+$polygon-bg-sharp-half: url(../../assets/images/svg/polygon-bg-sharp-half.png);
+$hero-image-2k: url(../../assets/images/hero-image-2k.jpg);
+$hero-image-1k: url(../../assets/images/hero-image-1k.jpg);
