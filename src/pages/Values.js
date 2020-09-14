@@ -45,7 +45,7 @@ const Values = () => {
           </div>
         </section>
       </ScrollAnimation>
-
+      {/*  */}
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <section className="padding-x-large padding-y-small flex values show-on-scroll">
           <div className="values-icons">

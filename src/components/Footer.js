@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-// import "../styles/components/Footer.scss";
 
 import ScrollAnimation from "react-animate-on-scroll"
 
@@ -13,9 +11,9 @@ const Footer = props => {
           <h6 className="text-thin">
             Let's talk about what we can make together:
           </h6>
-          <Link to="mailto:asia.jankowska00@gmail.com">
+          <a href="mailto:asia.jankowska00@gmail.com">
             <h5>asia.jankowska00@gmail.com</h5>
-          </Link>
+          </a>
           {/* <a href="" className="resume-link">My resume <i className="fas fa-file"></i></a> */}
           <div className="flex">
             <h1>

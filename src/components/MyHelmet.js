@@ -62,11 +62,6 @@ const MyHelmet = props => {
         },
       ]}
     >
-      {/* <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/images/favicons/apple-touch-icon.png"
-      /> */}
       <link
         rel="icon"
         type="image/png"

@@ -66,7 +66,6 @@ const Navigation = props => {
   useEffect(() => {
     if (typeof window !== `undefined` && !windowExists) {
       setWindowExists(true)
-      console.log("window exists")
     }
   }, [])
 
@@ -122,9 +121,6 @@ const Navigation = props => {
               <i className="fab fa-linkedin"></i>
             </a>
           </li>
-          {/* <li>
-        
-          </li> */}
         </ul>
       </nav>
 
