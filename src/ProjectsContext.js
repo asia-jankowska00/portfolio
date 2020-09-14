@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import React, { createContext } from "react"
 
 const data = {
   projects: [
@@ -49,8 +49,7 @@ const data = {
       longDescriptionSP: `We helped CCW by developing a scalable UI system, and creating a codebase that is elegant and easily
        adaptable for future developers, along with a functional prototype of the revamped website and webshop.`,
       linkGithub: "https://github.com/joanna-00/ccw-website/tree/version2",
-      linkLive:
-        "http://des-iis.ucn.dk/mmdi0919/1081578/sem2/mmd2/version2/index.html",
+      linkLive: "https://asia-jankowska00.github.io/ccw-website/",
       sectionOneTitle: "Process summary",
       sectionOneBodyFP: `The process’s core was redesigning the current website, which meant we needed to get a
        good understanding of the users. We relied on data gathered from interviews, as well as established best
@@ -89,8 +88,7 @@ const data = {
         that are suitable for diabetics when grocery shopping. The task was to digitize the shopping guide by creating a mobile application.`,
       longDescriptionSP: "",
       linkGithub: "https://github.com/joanna-00/DiabetesWebApp",
-      linkLive:
-        "http://des-iis.ucn.dk/mmdi0919/1081581/sem2/theme1/diabetes_app/",
+      linkLive: "https://asia-jankowska00.github.io/diabetes-web-app/",
       sectionOneTitle: "Process summary",
       sectionOneBodyFP: `We worked with a range of user research methods in order to best understand their needs.
        In the process, we used personas to simulate potential users’ interaction with our prototype.
@@ -159,8 +157,7 @@ const data = {
          complying with the brand guidelines and optimizing the Information Architecture.`,
       longDescriptionSP: "",
       linkGithub: "https://github.com/joanna-00/svalegaarden-mest",
-      linkLive:
-        "http://des-iis.ucn.dk/mmdi0919/1081578/sem1/mmd1/svalegaarden-mest/",
+      linkLive: "https://asia-jankowska00.github.io/svalegaarden-mest/",
       sectionOneTitle: "Process summary",
       sectionOneBodyFP: `Since our solution wasn’t going to be made from scratch, but rather a revamp
        of the old website, we needed to get a good understanding of content. We created a content
@@ -184,7 +181,7 @@ const data = {
       sectionThreeImage: "svalegaarden/svalgegaarden-animation.gif",
     },
   ],
-};
+}
 
 // const projectModel = {
 //   name: "",
@@ -209,14 +206,14 @@ const data = {
 //   sectionThreeImage: "",
 // };
 
-export const ProjectsContext = createContext();
+export const ProjectsContext = createContext()
 
-const ProjectsContextProvider = (props) => {
+const ProjectsContextProvider = props => {
   return (
     <ProjectsContext.Provider value={data}>
       {props.children}
     </ProjectsContext.Provider>
-  );
-};
+  )
+}
 
-export default ProjectsContextProvider;
+export default ProjectsContextProvider
