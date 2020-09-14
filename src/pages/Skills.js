@@ -51,12 +51,12 @@ const Skills = () => {
               reusable code for complex yet scalable interfaces. I have used
               most of it’s modern features like <strong>hooks</strong> or{" "}
               <strong>ContextAPI</strong>, and many different libraries built
-              for React, such as <strong>Redux</strong>,
+              for React, such as <strong>Redux</strong>,{" "}
               <strong>styled-components</strong> and{" "}
               <strong>Material UI</strong>.
             </p>
             <p>
-              I also have experience building static React websites using
+              I also have experience building static React websites using{" "}
               <strong>GatsbyJS</strong>.
             </p>
           </div>
@@ -71,7 +71,7 @@ const Skills = () => {
           </div>
           <div className="skills-text">
             <p>
-              Recently I have also started experimenting and diving deeper into
+              Recently I have also started experimenting and diving deeper into{" "}
               <strong>Vue</strong>.
             </p>
             <p>
@@ -117,7 +117,7 @@ const Skills = () => {
           <div className="skills-text">
             <p>
               I can work with code on the server-side, utilizing{" "}
-              <strong>Node.js</strong>,<strong>Express</strong> in my
+              <strong>Node.js</strong>, <strong>Express</strong> in my
               development stack. This allows me to write the functional back end
               for my front end, allowing me to build dynamic full-stack
               applications.
@@ -141,7 +141,7 @@ const Skills = () => {
           <div className="skills-text">
             <p>
               I have worked with both SQL, and NoSQL databases, namely{" "}
-              <strong>MSSQL</strong>,<strong>MongoDB</strong> and{" "}
+              <strong>MSSQL</strong>, <strong>MongoDB</strong> and{" "}
               <strong>Firebase</strong>.
             </p>
             <p>

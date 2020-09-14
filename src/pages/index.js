@@ -37,9 +37,9 @@ const Homepage = () => {
                   That's me! But I do more than just build websites and
                   interfaces –
                   <br />I create elegant, thoughtful
-                  <strong>digital experiences</strong>,<br />
+                  <strong> digital experiences</strong>,<br />
                   that <strong>delight</strong> the users and
-                  <strong>satisfy</strong> stakeholders' expectations.
+                  <strong> satisfy</strong> stakeholders' expectations.
                 </p>
                 <div className="flex blurb-links">
                   <Link to="/skills">

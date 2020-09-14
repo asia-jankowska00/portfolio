@@ -121,14 +121,14 @@ const data = {
       roles: ["Main designer", "Main developer"],
       subtitle: "React application",
       displayImage: "it-just-forks/it-just-forks-all-devices.png",
-      longDescriptionFP: `The aim of the project was the exploration of the most modern features of React,
+      longDescriptionFP: `The aim of the project was the exploration of the most modern features of React, 
        along with strengthening my skills in ES6 Javascript and handling asynchronous code with promises and async/await.`,
       longDescriptionSP: "",
       linkGithub: "https://github.com/asia-jankowska00/react-recipe-app",
       linkLive: "https://asia-jankowska00.github.io/react-recipe-app/",
       sectionOneTitle: "React",
-      sectionOneBodyFP: `The project was realized using the React framework. In the code structure, I utilized a range
-       of modern features, including functional components and hooks. I used the react router to navigate between
+      sectionOneBodyFP: `The project was realized using the React framework. In the code structure, I utilized a range 
+       of modern features, including functional components and hooks. I used the react router to navigate between 
         different parts of the app.`,
       sectionOneBodySP: "",
       sectionOneImage: "it-just-forks/it-just-forks-32.png",
