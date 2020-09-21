@@ -50,6 +50,7 @@ nav.nav-desktop.invert {
 }
 
 nav.nav-mobile.invert i {
+  transition: color 0.25s ease-in;
   color: $grey-6;
 }
 

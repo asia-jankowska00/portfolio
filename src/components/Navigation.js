@@ -127,7 +127,7 @@ const Navigation = props => {
       <nav
         className={`nav-mobile show-on-scroll ${
           isMobileNavOpen ? "" : "pointer-events-none"
-        } ${invertNav ? "invert" : ""}`}
+        } ${invertNav && !isMobileNavOpen ? "invert" : ""}`}
       >
         <h2 className="margin-0">
           <i
