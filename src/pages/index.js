@@ -19,7 +19,7 @@ const Homepage = () => {
 
   return (
     <React.Fragment>
-      <Layout isHomepage={true} title="Home">
+      <Layout isHomepage={true} title="Front End Developer Portfolio">
         <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <section className="padding-x-medium mt-25 padding-y-large blurb show-on-scroll">
             <h1 className="text-center">&lt;The developer you need /&gt;</h1>

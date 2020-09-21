@@ -17,10 +17,7 @@ const MyHelmet = props => {
       titleTemplate={`%s | Front End Developer Portfolio - Joanna Jankowska`}
       meta={[
         {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
+          name: `title`,
           property: `og:title`,
           content: title,
         },
@@ -29,10 +26,12 @@ const MyHelmet = props => {
           content: "https://asia-jankowska00.github.io/",
         },
         {
-          name: `og:image`,
+          name: `image`,
+          property: `og:image`,
           content: "https://asia-jankowska00.github.io/images/banner_ad.jpg",
         },
         {
+          name: `description`,
           property: `og:description`,
           content: metaDescription,
         },
