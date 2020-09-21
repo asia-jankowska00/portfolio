@@ -30,7 +30,7 @@ const MyHelmet = props => {
         },
         {
           name: `og:image`,
-          content: "/images/banner.png",
+          content: "https://asia-jankowska00.github.io/images/banner_ad.jpg",
         },
         {
           property: `og:description`,
