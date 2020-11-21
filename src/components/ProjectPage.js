@@ -82,7 +82,7 @@ const ProjectPage = props => {
           <div className="cases-image">
             <img
               src={`${projectImagesPath}${
-                currentProject.displayImage ? currentProject.displayImage : null
+                currentProject ? currentProject.displayImage : null
               }`}
               alt=""
             />
@@ -118,7 +118,7 @@ const ProjectPage = props => {
           <div className="cases-image">
             <img
               src={`${projectImagesPath}${
-                currentProject.sectionOneImage ? currentProject.sectionOneImage : null
+                currentProject ? currentProject.sectionOneImage : null
               }`}
               alt=""
             />
@@ -151,7 +151,7 @@ const ProjectPage = props => {
           <div className="cases-image">
             <img
               src={`${projectImagesPath}${
-                currentProject.sectionTwoImage ? currentProject.sectionTwoImage : null
+                currentProject ? currentProject.sectionTwoImage : null
               }`}
               alt=""
             />
@@ -166,7 +166,7 @@ const ProjectPage = props => {
           <div className="cases-image">
             <img
               src={`${projectImagesPath}${
-                currentProject.sectionThreeImage ? currentProject.sectionThreeImage : null
+                currentProject ? currentProject.sectionThreeImage : null
               }`}
               alt=""
             />

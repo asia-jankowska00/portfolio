@@ -45,7 +45,7 @@ const Story = () => {
             </h5>
 
             <h4>Completed courses</h4>
-            {/*  */}
+
             <h6 className="padding-y-extra-small">
               <a
                 href="https://www.udemy.com/certificate/UC-ea3477eb-c732-47f0-bf4f-9472737a1c6c/"
