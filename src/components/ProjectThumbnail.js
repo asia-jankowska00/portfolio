@@ -7,7 +7,7 @@ const ProjectThumbnail = props => {
     <div
       className={`case `}
       style={{
-        backgroundImage: `url(../images/projects/${project.displayImage})`,
+        backgroundImage: `url(${process.env.GATSBY_URL}/images/projects/${project.displayImage})`,
       }}
       // background-image={`url(../../assets/images/projects/svalegaarden/svalegaarden-all-devices.png)`}
     >

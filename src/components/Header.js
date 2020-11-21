@@ -62,11 +62,6 @@ const Header = props => {
       {/* <ScrollAnimation animateIn="fadeIn" animateOnce={true}> */}
       <div className="text-light gradient-half-background">
         <div className="hero-image"></div>
-        {/* <img
-          className="header-svg"
-          src="../images/svg/polygon-header.svg"
-          alt=""
-        /> */}
 
         <h2 className="txt-type header-title padding-x-large padding-y-small">
           <Typewriter
