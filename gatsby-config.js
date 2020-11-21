@@ -28,4 +28,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  pathPrefix: `/class/mmdi0919/1081578/sem3/tem2/portfolio/version2`,
 }

@@ -29,7 +29,7 @@ const Homepage = () => {
             <div className="flex">
               <img
                 className="blurb-image hide-small hide-medium"
-                src={`${process.env.GATSBY_URL}/images/svg/icon-webdev.svg`} alt=""
+                src='../images/svg/icon-webdev.svg' alt=""
               />
               <div className="flex blurb-content">
                 <p className="padding-y-extra-small">
