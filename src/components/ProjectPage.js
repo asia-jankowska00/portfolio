@@ -78,12 +78,12 @@ const ProjectPage = props => {
             </ul>
           </div>
           <div className="cases-image">
-            <img
-              src={`${projectImagesPath}${
-                currentProject ? currentProject.displayImage : null
-              }`}
+            {currentProject ? 
+              <img
+              src={`${projectImagesPath}${currentProject.displayImage}`}
               alt=""
-            />
+            /> : null
+            }
           </div>
         </section>
       </ScrollAnimation>
@@ -114,12 +114,12 @@ const ProjectPage = props => {
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <section className="padding-x-large padding-y-medium flex cases show-on-scroll">
           <div className="cases-image">
+          {currentProject ? 
             <img
-              src={`${projectImagesPath}${
-                currentProject ? currentProject.sectionOneImage : null
-              }`}
-              alt=""
-            />
+            src={`${projectImagesPath}${currentProject.sectionOneImage}`}
+            alt=""
+          /> : null
+          }
           </div>
           <div className="cases-info">
             <h1>{currentProject ? currentProject.sectionOneTitle : null}</h1>
@@ -147,12 +147,12 @@ const ProjectPage = props => {
             </p>
           </div>
           <div className="cases-image">
+          {currentProject ? 
             <img
-              src={`${projectImagesPath}${
-                currentProject ? currentProject.sectionTwoImage : null
-              }`}
-              alt=""
-            />
+            src={`${projectImagesPath}${currentProject.sectionTwoImage}`}
+            alt=""
+          /> : null
+          }
           </div>
         </section>
       </ScrollAnimation>
@@ -162,12 +162,12 @@ const ProjectPage = props => {
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <section className="padding-x-large padding-y-medium flex cases show-on-scroll">
           <div className="cases-image">
+          {currentProject ? 
             <img
-              src={`${projectImagesPath}${
-                currentProject ? currentProject.sectionThreeImage : null
-              }`}
-              alt=""
-            />
+            src={`${projectImagesPath}${currentProject.sectionThreeImage}`}
+            alt=""
+          /> : null
+          }
           </div>
           <div className="cases-info">
             <h1>{currentProject ? currentProject.sectionThreeTitle : null}</h1>
