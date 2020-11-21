@@ -11,7 +11,6 @@ import "../styles/main.scss"
 const ProjectPage = props => {
   const data = useContext(ProjectsContext)
   let projects
-  console.log(process.env.GATSBY_URL)
 
   const projectPath = props.projectPath
   const projectImagesPath = `${process.env.GATSBY_URL}/images/projects/`
@@ -39,7 +38,6 @@ const ProjectPage = props => {
           </h1>
         </section>
       </ScrollAnimation>
-      {console.log(currentProject)}
 
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <section className="padding-x-large padding-y-medium flex cases show-on-scroll">
