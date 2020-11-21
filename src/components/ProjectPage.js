@@ -11,9 +11,10 @@ import "../styles/main.scss"
 const ProjectPage = props => {
   const data = useContext(ProjectsContext)
   let projects
+  console.log(process.env.GATSBY_URL)
 
   const projectPath = props.projectPath
-  const projectImagesPath = "../images/projects/"
+  const projectImagesPath = `${process.env.GATSBY_URL}/images/projects/`
 
   let currentProject
 
@@ -38,6 +39,7 @@ const ProjectPage = props => {
           </h1>
         </section>
       </ScrollAnimation>
+      {console.log(currentProject)}
 
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <section className="padding-x-large padding-y-medium flex cases show-on-scroll">
@@ -80,7 +82,7 @@ const ProjectPage = props => {
           <div className="cases-image">
             <img
               src={`${projectImagesPath}${
-                currentProject ? currentProject.displayImage : null
+                currentProject.displayImage ? currentProject.displayImage : null
               }`}
               alt=""
             />
@@ -116,7 +118,7 @@ const ProjectPage = props => {
           <div className="cases-image">
             <img
               src={`${projectImagesPath}${
-                currentProject ? currentProject.sectionOneImage : null
+                currentProject.sectionOneImage ? currentProject.sectionOneImage : null
               }`}
               alt=""
             />
@@ -149,7 +151,7 @@ const ProjectPage = props => {
           <div className="cases-image">
             <img
               src={`${projectImagesPath}${
-                currentProject ? currentProject.sectionTwoImage : null
+                currentProject.sectionTwoImage ? currentProject.sectionTwoImage : null
               }`}
               alt=""
             />
@@ -164,7 +166,7 @@ const ProjectPage = props => {
           <div className="cases-image">
             <img
               src={`${projectImagesPath}${
-                currentProject ? currentProject.sectionThreeImage : null
+                currentProject.sectionThreeImage ? currentProject.sectionThreeImage : null
               }`}
               alt=""
             />

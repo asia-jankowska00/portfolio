@@ -6,7 +6,7 @@ import ScrollAnimation from "react-animate-on-scroll"
 const ProjectSection = props => {
   const project = props.project
 
-  const projectImagesPath = "../images/projects/"
+  const projectImagesPath = `${process.env.GATSBY_URL}/images/projects/`
   return (
     <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
       {props.alignment === "left" ? (

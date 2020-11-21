@@ -136,12 +136,12 @@ const Skills = () => {
         <section className="padding-x-large padding-y-small flex skills show-on-scroll">
           <div className="skills-icons">
             <h1>Databases</h1>
-            <h4 className="subtitle">SQL, NoSQL, MongoDB, MySQL, Firebase</h4>
+            <h4 className="subtitle">SQL, NoSQL, PostgreSQL, MongoDB, Firebase</h4>
           </div>
           <div className="skills-text">
             <p>
               I have worked with both SQL, and NoSQL databases, namely{" "}
-              <strong>MSSQL</strong>, <strong>MongoDB</strong> and{" "}
+              <strong>PostgreSQL</strong>, <strong>MongoDB</strong> and{" "}
               <strong>Firebase</strong>.
             </p>
             <p>
