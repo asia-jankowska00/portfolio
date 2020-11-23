@@ -10,8 +10,16 @@ This is a static refactor of my portfolio site, made using React and GatsbyJS.
 - And a bunch of other cool stuff!
 
 
-#### ⚙️ Technology
-- React
-- GatsbyJS
-- SCSS
-- React Helmet (for SEO)
+#### ⚙️ Technology used
+- React - https://reactjs.org/
+- GatsbyJS - https://www.gatsbyjs.com/
+- SCSS - https://sass-lang.com/
+- React Helmet (for SEO) - https://github.com/nfl/react-helmet
+- TypewriterJS - https://github.com/tameemsafi/typewriterjs
+- React Animate on Scroll - https://github.com/dbramwell/react-animate-on-scroll
+
+
+## How to run locally
+1. Run `npm install` to install dependencies.
+2. Run `gatsby develop` to start the server.
+3. Go to localhost:8000 in your browser to view the project.
