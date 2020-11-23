@@ -21,5 +21,5 @@ This is a static refactor of my portfolio site, made using React and GatsbyJS.
 
 ## How to run locally
 1. Run `npm install` to install dependencies.
-2. Run `gatsby develop` to start the server.
+2. Run `npm run develop` to start the server.
 3. Go to localhost:8000 in your browser to view the project.
