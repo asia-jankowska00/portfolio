@@ -145,10 +145,12 @@ section.projects .cases-image img:hover {
 @include large {
   .case-view-buttons {
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 
     .gradient-button {
       margin-right: 4vw;
+      min-width: 33%;
     }
   }
 
@@ -161,10 +163,12 @@ section.projects .cases-image img:hover {
   .case-view-buttons {
     -webkit-box-pack: justify;
     justify-content: space-between;
-    width: 75%;
+    align-items: center;
+    // width: 75%;
 
     .gradient-button {
       margin-right: 4vw;
+      min-width: 33%;
     }
   }
 

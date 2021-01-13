@@ -211,7 +211,24 @@ strong {
   }
 
   @include extra-large {
-    max-width: 50%;
+    max-width: 40%;
+  }
+
+  &.disabled {
+    color: grey;
+    cursor: not-allowed;
+
+    &:hover::after {
+      position: absolute;
+      padding: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: 'Coming soon'
+    }
+
+    &::before {
+      background: rgb(206, 206, 206);
+    }
   }
 
   &:hover {

@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import { Link } from "gatsby"
+import parse from "html-react-parser"
 
 import { ProjectsContext } from "../ProjectsContext"
 import Layout from "./Layout"
@@ -42,13 +43,13 @@ const ProjectPage = props => {
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <section className="padding-x-large padding-y-medium flex cases show-on-scroll">
           <div className="cases-info">
-            <h1>Description</h1>
+            <h2>Description</h2>
 
             <p className="text-dark">
-              {currentProject ? currentProject.longDescriptionFP : null}
+              {currentProject ? parse(currentProject.longDescriptionFP) : null}
             </p>
             <p className="text-dark">
-              {currentProject ? currentProject.longDescriptionSP : null}
+              {currentProject ? parse(currentProject.longDescriptionSP) : null}
             </p>
 
             <p>
@@ -78,12 +79,12 @@ const ProjectPage = props => {
             </ul>
           </div>
           <div className="cases-image">
-            {currentProject ? 
+            {currentProject ? (
               <img
-              src={`${projectImagesPath}${currentProject.displayImage}`}
-              alt=""
-            /> : null
-            }
+                src={`${projectImagesPath}${currentProject.displayImage}`}
+                alt=""
+              />
+            ) : null}
           </div>
         </section>
       </ScrollAnimation>
@@ -92,20 +93,49 @@ const ProjectPage = props => {
         <div className="case-view-buttons padding-x-large padding-y-small flex text-dark show-on-scroll">
           <a
             href={currentProject ? currentProject.linkGithub : null}
+            target="_blank"
             className="gradient-button mb-4"
           >
             <h4>
-              View on GitHub <i className="fa fa-github" aria-hidden="true"></i>
+              View code <i className="fa fa-github" aria-hidden="true"></i>
             </h4>
           </a>
           <a
             href={currentProject ? currentProject.linkLive : null}
+            target="_blank"
             className="gradient-button  mb-4"
           >
             <h4>
-              View live <i className="fas fa-long-arrow-alt-right"></i>
+              View online <i class="fas fa-external-link-alt"></i>
             </h4>
           </a>
+          {currentProject && currentProject.linkDesign ? (
+            <a
+              href={currentProject ? currentProject.linkDesign : null}
+              target="_blank"
+              className="gradient-button mb-4"
+            >
+              <h4>
+                View design <i class="fas fa-palette"></i>
+              </h4>
+            </a>
+          ) : null}
+        </div>
+        <div className="case-view-buttons padding-x-large padding-y-extra-small flex text-dark show-on-scroll">
+          {currentProject.name === "Budget Planner" ? (
+            <a className="gradient-button disabled mb-4">
+              <h4>
+                Get on Play store <i class="fab fa-google-play"></i>
+              </h4>
+            </a>
+          ) : null}
+             {currentProject.name === "Budget Planner" ? (
+            <a className="gradient-button disabled mb-4">
+              <h4>
+                Get on Apple store <i class="fab fa-apple"></i>
+              </h4>
+            </a>
+          ) : null}
         </div>
       </ScrollAnimation>
 
@@ -114,20 +144,20 @@ const ProjectPage = props => {
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <section className="padding-x-large padding-y-medium flex cases show-on-scroll">
           <div className="cases-image">
-          {currentProject ? 
-            <img
-            src={`${projectImagesPath}${currentProject.sectionOneImage}`}
-            alt=""
-          /> : null
-          }
+            {currentProject ? (
+              <img
+                src={`${projectImagesPath}${currentProject.sectionOneImage}`}
+                alt=""
+              />
+            ) : null}
           </div>
           <div className="cases-info">
-            <h1>{currentProject ? currentProject.sectionOneTitle : null}</h1>
+            <h2>{currentProject ? currentProject.sectionOneTitle : null}</h2>
             <p className="text-dark">
-              {currentProject ? currentProject.sectionOneBodyFP : null}
+              {currentProject ? parse(currentProject.sectionOneBodyFP) : null}
             </p>
             <p className="text-dark">
-              {currentProject ? currentProject.sectionOneBodySP : null}
+              {currentProject ? parse(currentProject.sectionOneBodySP) : null}
             </p>
           </div>
         </section>
@@ -138,21 +168,21 @@ const ProjectPage = props => {
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <section className="padding-x-large padding-y-medium flex cases show-on-scroll">
           <div className="cases-info">
-            <h1>{currentProject ? currentProject.sectionTwoTitle : null}</h1>
+            <h2>{currentProject ? currentProject.sectionTwoTitle : null}</h2>
             <p className="text-dark">
-              {currentProject ? currentProject.sectionTwoBodyFP : null}
+              {currentProject ? parse(currentProject.sectionTwoBodyFP) : null}
             </p>
             <p className="text-dark">
-              {currentProject ? currentProject.sectionTwoBodySP : null}
+              {currentProject ? parse(currentProject.sectionTwoBodySP) : null}
             </p>
           </div>
           <div className="cases-image">
-          {currentProject ? 
-            <img
-            src={`${projectImagesPath}${currentProject.sectionTwoImage}`}
-            alt=""
-          /> : null
-          }
+            {currentProject ? (
+              <img
+                src={`${projectImagesPath}${currentProject.sectionTwoImage}`}
+                alt=""
+              />
+            ) : null}
           </div>
         </section>
       </ScrollAnimation>
@@ -162,20 +192,20 @@ const ProjectPage = props => {
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <section className="padding-x-large padding-y-medium flex cases show-on-scroll">
           <div className="cases-image">
-          {currentProject ? 
-            <img
-            src={`${projectImagesPath}${currentProject.sectionThreeImage}`}
-            alt=""
-          /> : null
-          }
+            {currentProject ? (
+              <img
+                src={`${projectImagesPath}${currentProject.sectionThreeImage}`}
+                alt=""
+              />
+            ) : null}
           </div>
           <div className="cases-info">
-            <h1>{currentProject ? currentProject.sectionThreeTitle : null}</h1>
+            <h2>{currentProject ? currentProject.sectionThreeTitle : null}</h2>
             <p className="text-dark">
-              {currentProject ? currentProject.sectionThreeBodyFP : null}
+              {currentProject ? parse(currentProject.sectionThreeBodyFP) : null}
             </p>
             <p className="text-dark">
-              {currentProject ? currentProject.sectionThreeBodySP : null}
+              {currentProject ? parse(currentProject.sectionThreeBodySP) : null}
             </p>
           </div>
         </section>
