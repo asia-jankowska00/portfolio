@@ -122,14 +122,14 @@ const ProjectPage = props => {
           ) : null}
         </div>
         <div className="case-view-buttons padding-x-large padding-y-extra-small flex text-dark show-on-scroll">
-          {currentProject.name === "Budget Planner" ? (
+          {currentProject && currentProject.name === "Budget Planner" ? (
             <a className="gradient-button disabled mb-4">
               <h4>
                 Get on Play store <i class="fab fa-google-play"></i>
               </h4>
             </a>
           ) : null}
-             {currentProject.name === "Budget Planner" ? (
+             {currentProject && currentProject.name === "Budget Planner" ? (
             <a className="gradient-button disabled mb-4">
               <h4>
                 Get on Apple store <i class="fab fa-apple"></i>
