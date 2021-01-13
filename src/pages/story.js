@@ -38,7 +38,7 @@ const Story = () => {
             </p>
 
             <h5 className="padding-y-extra-small gradient-underline-hover portfolio-link mb-4">
-              <a href="https://noxaunu.artstation.com/">
+              <a href="https://noxaunu.artstation.com/" target="_blank">
                 Digital art portfolio{" "}
                 <i className="fas fa-external-link-alt"></i>
               </a>
